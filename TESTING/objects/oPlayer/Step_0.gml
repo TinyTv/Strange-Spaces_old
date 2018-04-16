@@ -1,7 +1,7 @@
 //Player Movement right
-if (isMoving == false)
+if (isMoving == false) //isMoving false = tsekkaa painetaanko näpäintä?
 {
-	if (keyboard_check(vk_right))
+	if (keyboard_check(vk_right)) //jos painetaan näppäintä isMoving = true
 	{
 		isMoving = true;
 		moveTimer = gridSize;
@@ -17,7 +17,7 @@ if (place_meeting(x+hsp,y,oWall))
 	{
 		x = x + sign(hsp);//not colliding, move horizontally
 	}
-	//while-loop condition is met:
+	//while-loop condition is met = koskee oWalliin:
 	isMoving = false;
 }
 
