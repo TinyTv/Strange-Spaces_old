@@ -1,5 +1,5 @@
 //Player Movement right
-if (isMoving == false) //isMoving false = tsekkaa painetaanko näpäintä?
+if (isMoving == false) //isMoving false = tsekkaa painetaanko näppäintä?
 {
 	if (keyboard_check(vk_right)) //jos painetaan näppäintä isMoving = true
 	{
@@ -20,17 +20,6 @@ if (place_meeting(x+hsp,y,oWall))
 	//while-loop condition is met = koskee oWalliin:
 	isMoving = false;
 }
-
-//Checks if the player can move. True = moves the player.
-if (isMoving == true)
-{ 
-	x += hsp;
-	y += vsp;
-	
-	moveTimer -= moveSpeed;
-	if (moveTimer == 0) isMoving = false;
-}
-
 
 //Player movement left
 if (isMoving == false)
@@ -54,15 +43,6 @@ if (place_meeting(x+hsp,y,oWall))
 	isMoving = false;
 }
 
-//Checks if the player can move. True = moves the player.
-if (isMoving == true)
-{ 
-	x += hsp;
-	y += vsp;
-	
-	moveTimer -= moveSpeed;
-	if (moveTimer == 0) isMoving = false;
-}
 
 //Player movement up/down
 if (keyboard_check(vk_up))
