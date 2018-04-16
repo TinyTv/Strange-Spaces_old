@@ -1,2 +1,5 @@
-/// @description Insert description here
-// You can write your code in this editor
+//Player Movement
+gridSize = 80
+hsp = 0
+vsp = 0
+moveSpeed = 4
