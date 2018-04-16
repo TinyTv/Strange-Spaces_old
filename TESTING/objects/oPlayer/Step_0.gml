@@ -10,6 +10,18 @@ if (isMoving == false)
 	}
 }
 
+//horizontal collision 
+if (place_meeting(x+hsp,y,oWall))
+{
+	while(!place_meeting(x+sign(hsp),y,oWall))
+	{
+		x = x + sign(hsp);//not colliding, move horizontally
+	}
+	//while-loop condition is met:
+	isMoving = false;
+}
+
+//Checks if the player can move. True = moves the player.
 if (isMoving == true)
 { 
 	x += hsp;
@@ -31,7 +43,18 @@ if (isMoving == false)
 		vsp = 0;
 	}
 }
+//horizontal collision 
+if (place_meeting(x+hsp,y,oWall))
+{
+	while(!place_meeting(x+sign(hsp),y,oWall))
+	{
+		x = x + sign(hsp);//not colliding, move horizontally
+	}
+	//while-loop condition is met:
+	isMoving = false;
+}
 
+//Checks if the player can move. True = moves the player.
 if (isMoving == true)
 { 
 	x += hsp;
@@ -58,11 +81,24 @@ if (keyboard_check(vk_down))
 	vsp = moveSpeed;
 }
 
+//Vertical collision 
+if (place_meeting(x,y+vsp,oWall))
+{
+	while(!place_meeting(x,y+sign(vsp),oWall))
+	{
+		y = y + sign(vsp);//not colliding, move vertically
+	}
+	//while-loop condition is met:
+	isMoving = false;
+}
+
+
+//Checks if the player can move. True = moves the player.
 if(isMoving == true)
 { 
 	x += hsp;
 	y += vsp;
 	
 	moveTimer -= moveSpeed;
-	if (moveTimer == 0) isMoving = false;
+	if (moveTimer == 0) isMoving = false; 
 }
