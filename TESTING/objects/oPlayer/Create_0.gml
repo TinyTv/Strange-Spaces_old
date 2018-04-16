@@ -1,5 +1,6 @@
-//Player Movement
-gridSize = 80
-hsp = 0
-vsp = 0
-moveSpeed = 4
+gridSize = 80;
+moveSpeed = 4;
+isMoving = false;
+moveTimer = 0;
+hsp = 0;
+vsp = 0;

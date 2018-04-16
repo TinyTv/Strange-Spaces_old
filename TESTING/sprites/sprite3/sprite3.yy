@@ -1,14 +1,14 @@
 {
-    "id": "83a4db9b-d99f-4538-8e39-5cb68f3c14d2",
+    "id": "d3d9bab2-d6e5-4fe7-a601-a0216d1a2002",
     "modelName": "GMSprite",
     "mvc": "1.12",
-    "name": "detailTest",
+    "name": "sprite3",
     "For3D": false,
     "HTile": false,
     "VTile": false,
-    "bbox_bottom": 793,
-    "bbox_left": 4,
-    "bbox_right": 797,
+    "bbox_bottom": 79,
+    "bbox_left": 0,
+    "bbox_right": 79,
     "bbox_top": 0,
     "bboxmode": 0,
     "colkind": 1,
@@ -16,37 +16,37 @@
     "edgeFiltering": false,
     "frames": [
         {
-            "id": "6f54930c-b623-4597-8286-6817c08a96ab",
+            "id": "7962d5b5-3268-40aa-9afb-4425c85d8865",
             "modelName": "GMSpriteFrame",
             "mvc": "1.0",
-            "SpriteId": "83a4db9b-d99f-4538-8e39-5cb68f3c14d2",
+            "SpriteId": "d3d9bab2-d6e5-4fe7-a601-a0216d1a2002",
             "compositeImage": {
-                "id": "f26dcd80-1322-49c6-816c-5e5e753b0c86",
+                "id": "66c24561-d61c-42fb-8822-f7d134e8c702",
                 "modelName": "GMSpriteImage",
                 "mvc": "1.0",
-                "FrameId": "6f54930c-b623-4597-8286-6817c08a96ab",
+                "FrameId": "7962d5b5-3268-40aa-9afb-4425c85d8865",
                 "LayerId": "00000000-0000-0000-0000-000000000000"
             },
             "images": [
                 {
-                    "id": "4dd6a619-32c8-44e4-8e75-43f7fd87e8ce",
+                    "id": "c28462c6-121c-42dd-8399-5c855282a77d",
                     "modelName": "GMSpriteImage",
                     "mvc": "1.0",
-                    "FrameId": "6f54930c-b623-4597-8286-6817c08a96ab",
-                    "LayerId": "c92d068f-8676-4cb4-8390-f070a7e4d03f"
+                    "FrameId": "7962d5b5-3268-40aa-9afb-4425c85d8865",
+                    "LayerId": "195d7f85-b439-467e-9e48-04c057ff57a1"
                 }
             ]
         }
     ],
     "gridX": 0,
     "gridY": 0,
-    "height": 800,
+    "height": 80,
     "layers": [
         {
-            "id": "c92d068f-8676-4cb4-8390-f070a7e4d03f",
+            "id": "195d7f85-b439-467e-9e48-04c057ff57a1",
             "modelName": "GMImageLayer",
             "mvc": "1.0",
-            "SpriteId": "83a4db9b-d99f-4538-8e39-5cb68f3c14d2",
+            "SpriteId": "d3d9bab2-d6e5-4fe7-a601-a0216d1a2002",
             "blendMode": 0,
             "isLocked": false,
             "name": "default",
@@ -54,7 +54,7 @@
             "visible": true
         }
     ],
-    "origin": 9,
+    "origin": 0,
     "originLocked": false,
     "playbackSpeed": 15,
     "playbackSpeedType": 0,
@@ -64,7 +64,7 @@
     "swfPrecision": 2.525,
     "textureGroupId": "1225f6b0-ac20-43bd-a82e-be73fa0b6f4f",
     "type": 0,
-    "width": 800,
-    "xorig": 80,
-    "yorig": 80
+    "width": 80,
+    "xorig": 0,
+    "yorig": 0
 }
