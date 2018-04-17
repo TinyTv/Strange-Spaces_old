@@ -1,23 +1,32 @@
-//Collision 
-if (place_meeting(oTest.x + sign(hsp),oTest.y + sign(vsp),oWall))
-{
-	state = states.idle;
-	hsp = 0;
-	vsp = 0;
-	return; 
-}
-
-
 if(hsp!=0)
 {
+	if ((abs(hsp) - moveSpeed) <= 0)
+	{
+		x += hsp;	
+		hsp = 0;
+	}
+	
+	else
+	{
 	x += sign(hsp) * moveSpeed;
-	hsp -= sign(hsp) * moveSpeed;;
+	hsp -= sign(hsp) * moveSpeed;
+	}
 }
+
 else if(vsp!=0)
 {
+	
+	if ((abs(vsp) - moveSpeed) <= 0)
+	{
+		y += vsp;	
+		vsp = 0;
+	}
+	
+	else
+	{
 	y += sign(vsp) * moveSpeed;
-	vsp -= sign(vsp) * moveSpeed;;
+	vsp -= sign(vsp) * moveSpeed;
+	}
 }
-else state =states.idle;
 
-
+else state = states.idle;

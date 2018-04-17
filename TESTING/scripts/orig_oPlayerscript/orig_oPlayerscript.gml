@@ -12,7 +12,7 @@ vsp = 0;
 
 
 
-//Step-eventint koodi oPlayer original
+//Step-eventin koodi oPlayer original
 
 
 
