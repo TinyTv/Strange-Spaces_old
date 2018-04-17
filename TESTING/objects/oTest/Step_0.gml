@@ -1,9 +1,3 @@
-//Player Movement 
-
-if keyboard_check(vk_up) vspeed = -5;
-if keyboard_check(vk_down) vspeed = 5;
-
-
-
-if keyboard_check(vk_left) hspeed = -5;
-if keyboard_check(vk_right) hspeed = 5;
+//Snaps the oTest box to the oPlayer coordinates
+x = round(oPlayer.x / oPlayer.gridSize) * oPlayer.gridSize;
+y = round(oPlayer.y / oPlayer.gridSize) * oPlayer.gridSize;
