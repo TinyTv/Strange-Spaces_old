@@ -43,6 +43,7 @@ if (state != states.move and state != states.dash)
 		hsp = lengthdir_x(dashDistance * gridSize, moveDirection * 90);
 		vsp = lengthdir_y(dashDistance * gridSize, moveDirection * 90);
 		state = states.dash;
+		var i = 0;
 		
 		for(var i = 0;i<dashDistance; i++)//i on pienempi kuin dashDistance = lisää iihin yks.
 		{
