@@ -7,6 +7,8 @@ vsp= 0;
 
 
 //Hide oPlayer
+
+
 //Move oPlayer to spawnpoint/checkpoint
 //
 
