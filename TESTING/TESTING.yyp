@@ -274,7 +274,7 @@
             "Key": "b6d63850-31c3-4592-b2cb-918aaa22cc8e",
             "Value": {
                 "id": "750d75eb-ab86-4e19-97d5-4fcb2380f1cd",
-                "resourcePath": "sprites\\sprite6\\sprite6.yy",
+                "resourcePath": "sprites\\spWall\\spWall.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -314,15 +314,7 @@
             "Key": "d3d9bab2-d6e5-4fe7-a601-a0216d1a2002",
             "Value": {
                 "id": "5c4229da-0a91-4b1a-907d-163d84e7fbbd",
-                "resourcePath": "sprites\\sprite3\\sprite3.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "e1d47658-33ee-445d-83b1-6f89735373f7",
-            "Value": {
-                "id": "125225fe-cf61-4d65-9c4b-6d48533d3ab1",
-                "resourcePath": "sprites\\sprite7\\sprite7.yy",
+                "resourcePath": "sprites\\spPlayer\\spPlayer.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -354,7 +346,7 @@
             "Key": "f82e418b-7919-4783-86f3-d5ce509a6128",
             "Value": {
                 "id": "dfecc46c-0bb3-4168-a88f-43f6302733c2",
-                "resourcePath": "sprites\\sprite5\\sprite5.yy",
+                "resourcePath": "sprites\\spHazard\\spHazard.yy",
                 "resourceType": "GMSprite"
             }
         }
