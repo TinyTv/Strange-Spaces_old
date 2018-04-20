@@ -2,65 +2,96 @@ if (state != states.move and state != states.dash) //if state is not move or das
 	{
 		
 	//Player Movement right
-	if (keyboard_check_pressed(vk_right)) 
+	if (keyboard_check_pressed(ord("D")))
 	{
-		moveDirection = 0;
+		/*moveDirection = 0;*/
 		hsp = gridSize;
 		vsp = 0;
 	}
 
 
 	//Player movement left
-		if (keyboard_check_pressed(vk_left))
+		if (keyboard_check_pressed(ord("A")))
 	{
-		moveDirection = 2;
+		/*moveDirection = 2;*/
 		hsp = -gridSize;
 		vsp = 0;
 	}
 
 
-	//Player movement up/down
-	if (keyboard_check_pressed(vk_up))
+	//Player movement up
+	if (keyboard_check_pressed(ord("W")))
 	{
-		moveDirection = 1;
+		/*moveDirection = 1;*/
 		hsp = 0;
 		vsp = -gridSize;
 	}
 
-	if (keyboard_check_pressed(vk_down))
+	//Player movement down
+	if (keyboard_check_pressed(ord("S")))
 	{ 
-		moveDirection = 3;
+		/*moveDirection = 3;*/
 		hsp = 0;
 		vsp = gridSize;
 	}
 	
-	//Player ability Dash 
-	if (keyboard_check_pressed(vk_shift))
+		
+	//TURNING THE PLAYER - wip
+	//Turning MoveDirection left 90 degrees
+	if (keyboard_check_pressed(ord("Q")))
 	{ 
-		var tempDashDistance = dashDistance;
-		
-		//Takes moveDirection and sets the direction of our dash
-		hsp = lengthdir_x(dashDistance * gridSize, moveDirection * 90);
-		vsp = lengthdir_y(dashDistance * gridSize, moveDirection * 90);
-		state = states.dash; //sets the state to dash
-				
-			
-		//Dash collision check 
-		for(var i = 0;i<dashDistance;i++)//If i is smaller than Distance = add 1 to i but keep i the same, until i is = to dashDistance.
+		moveDirection = moveDirection+1
+		if (moveDirection>3)
 		{
-			//Collision:
-			if (place_meeting(oTest.x + sign(hsp) + sign(hsp)*(i*gridSize), oTest.y + sign(vsp) + sign(vsp)*(i*gridSize), oWall))
-				{
-					tempDashDistance = i++;
-				}
-		}	
+			moveDirection = 0
+		}
 		
-		hsp = lengthdir_x(tempDashDistance * gridSize, moveDirection * 90);
-		vsp = lengthdir_y(tempDashDistance * gridSize, moveDirection * 90);
-		return;
+	}
+	
+	//Turning moveDirection right 90 degrees
+	if (keyboard_check_pressed(ord("E")))
+	{ 
+		moveDirection = moveDirection-1
+		if (moveDirection<0)
+		{
+			moveDirection = 3
+		}
 		
 	}
 		
+		
+	//Player ability Dash - ORIGINAL
+    if (keyboard_check_pressed(vk_down))
+    { 
+        var tempDashDistance = dashDistance;
+        
+        //Takes moveDirection and sets the direction of our dash for checking collisions
+        hsp = lengthdir_x(dashDistance * gridSize, moveDirection * 90);
+        vsp = lengthdir_y(dashDistance * gridSize, moveDirection * 90);
+        state = states.dash; //sets the state to dash
+                
+            
+        //Dash collision check 
+        for(var i = 0;i<dashDistance;i++)//If i is smaller than Distance = add 1 to i but keep i the same, until i is = to dashDistance.
+        {
+            //Collision:
+            if (place_meeting(oTest.x + sign(hsp) + sign(hsp)*(i*gridSize), oTest.y + sign(vsp) + sign(vsp)*(i*gridSize), oWall))
+                {
+                    tempDashDistance = i; // If there's a wall before we can finish dashing, shorten the dash distance (using temporary variable)
+					break;
+			   }
+        }    
+        
+        hsp = lengthdir_x(tempDashDistance * gridSize, moveDirection * 90);
+        vsp = lengthdir_y(tempDashDistance * gridSize, moveDirection * 90);
+        return;
+        
+    }
+	
+	
+		
+
+	//Collisions for normal movement		
 	if (vsp !=0 or hsp !=0)//If is moving:
 	{
 			//Collision check
@@ -70,6 +101,7 @@ if (state != states.move and state != states.dash) //if state is not move or das
 				state = states.idle;
 				hsp = 0;
 				vsp = 0; 
+				
 			}
 				
 				else state = states.move;
