@@ -11,4 +11,7 @@ switch (state)
 	case states.dash:
 		state_dash()
 		break;
+	case states.death:
+		state_death()
+		break;
 }

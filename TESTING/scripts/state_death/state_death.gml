@@ -7,7 +7,7 @@ vsp= 0;
 
 
 //Hide oPlayer
-
+visible = false;
 
 //Move oPlayer to spawnpoint/checkpoint
 //
@@ -15,3 +15,4 @@ vsp= 0;
 
 
 //Change state to idle 
+state = states.idle;
