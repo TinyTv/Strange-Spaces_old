@@ -1,1 +1,1 @@
-// state = states.death;
+//tapa oPlayer
