@@ -1,1 +1,1 @@
-state = states.death;
+// state = states.death;
