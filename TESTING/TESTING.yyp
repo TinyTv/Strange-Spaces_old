@@ -279,6 +279,14 @@
             }
         },
         {
+            "Key": "9c8fac63-b380-4899-b806-ffa051447f85",
+            "Value": {
+                "id": "161db559-29bb-437b-80d6-1e9f69777fc4",
+                "resourcePath": "sprites\\sprite11\\sprite11.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "9e8fc614-161d-4649-a8ef-61309774dce6",
             "Value": {
                 "id": "ff4eb478-f3b9-4497-8025-1b3cfd8b54b3",
@@ -292,6 +300,14 @@
                 "id": "6ce3b021-efa8-4eb1-a94f-c9173aa6614e",
                 "resourcePath": "scripts\\old_collision\\old_collision.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "a53cdb56-64e9-4012-a1fa-6410b176005d",
+            "Value": {
+                "id": "94d9bc49-249d-4fa8-a144-56a5706f7777",
+                "resourcePath": "objects\\oSpawnTimer\\oSpawnTimer.yy",
+                "resourceType": "GMObject"
             }
         },
         {
