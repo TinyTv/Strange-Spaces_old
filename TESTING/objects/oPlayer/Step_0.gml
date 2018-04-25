@@ -14,14 +14,4 @@ switch (state)
 	case states.death:
 		state_death()
 		break;
-	case states.attack:
-		state_attack()
-		break;
 }
-
-//Checks the player health, kills the player if health less than or equal to 0
-if (playerHealth <=0)
-	{
-	state = states.death;
-	state_death()
-	}
