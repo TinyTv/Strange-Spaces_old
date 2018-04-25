@@ -57,8 +57,21 @@ if (state != states.move and state != states.dash) //if state is not move or das
 		{
 			moveDirection = 3
 		}
-		
 	}
+	
+	
+	//Attacking	- if key is pressed execute attack script
+		
+		if (keyboard_check_pressed(vk_left))
+		{
+			if (global.canAttack = true)
+			{
+				state = states.attack;
+				state_attack()
+			}
+			else state = states.idle;
+		}
+	
 		
 		
 	//Player ability Dash 
@@ -81,7 +94,7 @@ if (state != states.move and state != states.dash) //if state is not move or das
                     tempDashDistance = i; // If there's a wall before we can finish dashing, shorten the dash distance (using temporary variable)
 					break;
 			   }
-        }    
+		  }    
         
 		//Set hsp and vsp again and dash
         hsp = lengthdir_x(tempDashDistance * gridSize, moveDirection * 90);
@@ -103,11 +116,25 @@ if (state != states.move and state != states.dash) //if state is not move or das
 				vsp = 0; 
 				
 			}
-				
+	
+		
+	//Collision with oDmg1 does 1 dmg
+	if (place_meeting(oTest.x + sign(hsp), oTest.y + sign(vsp),oDmg1))
+		{
+		playerHealth = playerHealth - 1;
+		}	
+	
+	//Collision with oHazard block kills the player - make it so that the player is able to step on the tile, but dies if so
+	if (place_meeting(oTest.x + sign(hsp), oTest.y + sign(vsp),oHazard))
+		{
+		state = states.death;
+		state_death()
+	
+		}
+						
 				else state = states.move;
 				
-				
-	}
+		}
 	
 	else 
 	{

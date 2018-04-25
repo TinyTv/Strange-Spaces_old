@@ -1,5 +1,5 @@
 {
-    "id": "3b28ab85-32d3-4382-a53d-4e680d0eeb1a",
+    "id": "43a41ed5-a2e9-49c1-9c6c-3d5ad1215094",
     "modelName": "GMObject",
     "mvc": "1.0",
     "name": "oHazard",

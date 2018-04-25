@@ -1,0 +1,2 @@
+moveSpeed = 8;
+

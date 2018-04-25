@@ -1,5 +1,5 @@
 {
-    "id": "b1970caf-da91-4df4-a85b-0585920d417d",
+    "id": "37694951-8013-4e2a-a860-d872c96ff571",
     "modelName": "GMScript",
     "mvc": "1.0",
     "name": "check_input",
