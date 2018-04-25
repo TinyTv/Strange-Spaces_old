@@ -42,7 +42,11 @@
             "Key": "09d87e13-2c44-41e0-9ef1-a276a87bd330",
             "Value": {
                 "id": "8a5142df-de35-4d36-94eb-497b851513ab",
+<<<<<<< HEAD
                 "resourcePath": "sprites\\spPlayer_left\\spPlayer_left.yy",
+=======
+                "resourcePath": "sprites\\spPlayer_left1\\spPlayer_left1.yy",
+>>>>>>> parent of 86f329f... allowing changes
                 "resourceType": "GMSprite"
             }
         },
@@ -79,6 +83,17 @@
             }
         },
         {
+<<<<<<< HEAD
+=======
+            "Key": "1315fd4e-a901-4da3-a0eb-0bfa9b5fbdd6",
+            "Value": {
+                "id": "21fa87b3-ff58-43b8-9816-1bcb94fe9ec8",
+                "resourcePath": "objects\\oDmg1\\oDmg1.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+>>>>>>> parent of 86f329f... allowing changes
             "Key": "13e6ba3f-e7f4-40fc-adcd-0ef564ec22f5",
             "Value": {
                 "id": "724c33c9-7298-41f9-a85f-b509b4beef56",
@@ -191,6 +206,25 @@
             }
         },
         {
+<<<<<<< HEAD
+=======
+            "Key": "561d8add-2a63-4882-b56d-c47d69228976",
+            "Value": {
+                "id": "903f2d3c-a001-4323-bf81-165c4abc0f2e",
+                "resourcePath": "objects\\oAttackTimer\\oAttackTimer.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "56931c8e-adde-4aaf-ba07-62e7ccc6968d",
+            "Value": {
+                "id": "85b6379c-4889-4b62-be66-4328155ace10",
+                "resourcePath": "sprites\\spBullet\\spBullet.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+>>>>>>> parent of 86f329f... allowing changes
             "Key": "57182b16-bb72-4e36-9df3-b9457680e093",
             "Value": {
                 "id": "13679879-efbe-4d68-b0ae-46ca91d7445a",
@@ -215,6 +249,17 @@
             }
         },
         {
+<<<<<<< HEAD
+=======
+            "Key": "62bd8afe-a2ff-4f97-b2f2-25c796db4467",
+            "Value": {
+                "id": "984b00bb-843d-474d-a725-9d6d03eeaeda",
+                "resourcePath": "sprites\\sprite17\\sprite17.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+>>>>>>> parent of 86f329f... allowing changes
             "Key": "671bd32e-1dd3-4db8-845e-2a34242f83bb",
             "Value": {
                 "id": "68a0cc84-cee1-41ea-bbb5-7805ec69872f",
@@ -239,6 +284,17 @@
             }
         },
         {
+<<<<<<< HEAD
+=======
+            "Key": "6ef45762-dbd0-4ada-839a-e84362e299ae",
+            "Value": {
+                "id": "c7dd1801-b014-492d-9b41-597c6b42f5f6",
+                "resourcePath": "objects\\oBullet\\oBullet.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+>>>>>>> parent of 86f329f... allowing changes
             "Key": "7312bddf-f6e5-4970-81b5-22c9c5b7605c",
             "Value": {
                 "id": "64ec5de1-22d0-4693-8ed0-c6e9fb9536fe",
@@ -351,6 +407,7 @@
             }
         },
         {
+<<<<<<< HEAD
             "Key": "be8a0a71-cf42-4bba-93f9-0a30e2f452c8",
             "Value": {
                 "id": "021c1270-d107-42ff-acb9-405dc818946a",
@@ -359,6 +416,8 @@
             }
         },
         {
+=======
+>>>>>>> parent of 86f329f... allowing changes
             "Key": "cc98d028-7bdd-4680-85f3-c87a7baa481e",
             "Value": {
                 "id": "f6195bef-fc2e-4746-b8fe-da963973a870",
@@ -402,7 +461,11 @@
             "Key": "d3d9bab2-d6e5-4fe7-a601-a0216d1a2002",
             "Value": {
                 "id": "5c4229da-0a91-4b1a-907d-163d84e7fbbd",
+<<<<<<< HEAD
                 "resourcePath": "sprites\\spPlayer_down\\spPlayer_down.yy",
+=======
+                "resourcePath": "sprites\\spPlayer_down1\\spPlayer_down1.yy",
+>>>>>>> parent of 86f329f... allowing changes
                 "resourceType": "GMSprite"
             }
         },
