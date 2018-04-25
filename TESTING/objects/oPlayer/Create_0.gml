@@ -3,12 +3,16 @@ moveSpeed = 8;
 dashDistance = 2; //dash moves the object 2 units (grids)
 dashSpeed = 40; 
 
+//Can attack, other instances can change this
+global.canAttack = true;
 
 //Snaps oPlayer to grid
 x = round(x / gridSize) * gridSize;
 y = round(y / gridSize) * gridSize;
 
 depth = -2
+
+playerHealth = 1
 
 hsp = 0;
 vsp = 0;
@@ -20,8 +24,8 @@ enum states
 	move,
 	dash,
 	death,
+	attack,
 }
 
 state = states.idle;
-
 
