@@ -1,3 +1,4 @@
+
 if(hsp!=0) //If hsp is NOT 0, check some things to figure out if we're moving:
 {
 	if ((abs(hsp) - moveSpeed) <= 0)
@@ -13,7 +14,7 @@ if(hsp!=0) //If hsp is NOT 0, check some things to figure out if we're moving:
 	}
 }
 
-//If we're not moving horizontally (checked above^) check if vsp is NOT 0 = do some checks:
+//If we're not moving horizontally (checked above^) check if vsp is NOT 0 = do some checks:: 
 else if(vsp!=0) 
 {
 	
