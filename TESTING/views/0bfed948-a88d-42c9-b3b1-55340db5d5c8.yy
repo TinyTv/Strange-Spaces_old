@@ -17,6 +17,7 @@
 <<<<<<< HEAD
         "be8a0a71-cf42-4bba-93f9-0a30e2f452c8",
         "9c8fac63-b380-4899-b806-ffa051447f85"
+<<<<<<< HEAD
 =======
         "9c8fac63-b380-4899-b806-ffa051447f85",
         "7e18e0b8-f6d0-4383-83d5-5b09e54f8e82",
@@ -27,6 +28,8 @@
         "7d033053-3706-4642-9d70-33ef0bf10ee0",
         "62bd8afe-a2ff-4f97-b2f2-25c796db4467"
 >>>>>>> parent of 86f329f... allowing changes
+=======
+>>>>>>> parent of 5d983eb... Player Animation added
     ],
     "filterType": "GMSprite",
     "folderName": "sprites",

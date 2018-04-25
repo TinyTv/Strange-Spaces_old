@@ -44,9 +44,12 @@
                 "id": "8a5142df-de35-4d36-94eb-497b851513ab",
 <<<<<<< HEAD
                 "resourcePath": "sprites\\spPlayer_left\\spPlayer_left.yy",
+<<<<<<< HEAD
 =======
                 "resourcePath": "sprites\\spPlayer_left1\\spPlayer_left1.yy",
 >>>>>>> parent of 86f329f... allowing changes
+=======
+>>>>>>> parent of 5d983eb... Player Animation added
                 "resourceType": "GMSprite"
             }
         },
@@ -84,6 +87,7 @@
         },
         {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             "Key": "1315fd4e-a901-4da3-a0eb-0bfa9b5fbdd6",
             "Value": {
@@ -94,6 +98,8 @@
         },
         {
 >>>>>>> parent of 86f329f... allowing changes
+=======
+>>>>>>> parent of 5d983eb... Player Animation added
             "Key": "13e6ba3f-e7f4-40fc-adcd-0ef564ec22f5",
             "Value": {
                 "id": "724c33c9-7298-41f9-a85f-b509b4beef56",
@@ -207,6 +213,7 @@
         },
         {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             "Key": "561d8add-2a63-4882-b56d-c47d69228976",
             "Value": {
@@ -225,6 +232,8 @@
         },
         {
 >>>>>>> parent of 86f329f... allowing changes
+=======
+>>>>>>> parent of 5d983eb... Player Animation added
             "Key": "57182b16-bb72-4e36-9df3-b9457680e093",
             "Value": {
                 "id": "13679879-efbe-4d68-b0ae-46ca91d7445a",
@@ -250,6 +259,7 @@
         },
         {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             "Key": "62bd8afe-a2ff-4f97-b2f2-25c796db4467",
             "Value": {
@@ -260,6 +270,8 @@
         },
         {
 >>>>>>> parent of 86f329f... allowing changes
+=======
+>>>>>>> parent of 5d983eb... Player Animation added
             "Key": "671bd32e-1dd3-4db8-845e-2a34242f83bb",
             "Value": {
                 "id": "68a0cc84-cee1-41ea-bbb5-7805ec69872f",
@@ -285,6 +297,7 @@
         },
         {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             "Key": "6ef45762-dbd0-4ada-839a-e84362e299ae",
             "Value": {
@@ -295,6 +308,8 @@
         },
         {
 >>>>>>> parent of 86f329f... allowing changes
+=======
+>>>>>>> parent of 5d983eb... Player Animation added
             "Key": "7312bddf-f6e5-4970-81b5-22c9c5b7605c",
             "Value": {
                 "id": "64ec5de1-22d0-4693-8ed0-c6e9fb9536fe",
@@ -416,8 +431,11 @@
             }
         },
         {
+<<<<<<< HEAD
 =======
 >>>>>>> parent of 86f329f... allowing changes
+=======
+>>>>>>> parent of 5d983eb... Player Animation added
             "Key": "cc98d028-7bdd-4680-85f3-c87a7baa481e",
             "Value": {
                 "id": "f6195bef-fc2e-4746-b8fe-da963973a870",
