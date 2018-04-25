@@ -1,3 +1,4 @@
+
 if (state != states.move and state != states.dash) //if state is not move or dash, check if a key is pressed:
 	{
 		
@@ -36,7 +37,7 @@ if (state != states.move and state != states.dash) //if state is not move or das
 	}
 	
 		
-	//TURNING THE PLAYER - wip
+	
 	//Turning MoveDirection left 90 degrees
 	if (keyboard_check_pressed(ord("Q")))
 	{ 
@@ -60,7 +61,7 @@ if (state != states.move and state != states.dash) //if state is not move or das
 	}
 		
 		
-	//Player ability Dash - ORIGINAL
+	//Player ability Dash 
     if (keyboard_check_pressed(vk_down))
     { 
         var tempDashDistance = dashDistance;
@@ -82,6 +83,7 @@ if (state != states.move and state != states.dash) //if state is not move or das
 			   }
         }    
         
+		//Set hsp and vsp again and dash
         hsp = lengthdir_x(tempDashDistance * gridSize, moveDirection * 90);
         vsp = lengthdir_y(tempDashDistance * gridSize, moveDirection * 90);
         return;
@@ -89,8 +91,6 @@ if (state != states.move and state != states.dash) //if state is not move or das
     }
 	
 	
-		
-
 	//Collisions for normal movement		
 	if (vsp !=0 or hsp !=0)//If is moving:
 	{
@@ -105,10 +105,38 @@ if (state != states.move and state != states.dash) //if state is not move or das
 			}
 				
 				else state = states.move;
+				
+				
 	}
 	
 	else 
 	{
 		state = states.idle;	
 	}
+	
 }
+
+
+	// Change sprite based on what direction we're facing
+	if (moveDirection = 2) 
+	{
+		sprite_index = spPlayer_left;		
+	}
+	
+	if (moveDirection = 0)
+	{
+		sprite_index = spPlayer_right;		
+	}
+	
+	if (moveDirection = 1)
+	{
+		sprite_index = spPlayer_up;
+		
+	}
+	
+	if (moveDirection = 3)
+	{
+		sprite_index = spPlayer_down;
+	}
+	
+

@@ -24,5 +24,3 @@ enum states
 
 state = states.idle;
 
-
-

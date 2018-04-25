@@ -13,7 +13,7 @@ if(hsp!=0) //If hsp is NOT 0, check some things to figure out if we're moving:
 	}
 }
 
-//If we're not moving horizontally (checked above^) check if vsp is NOT 0 = do some checks:: 
+//If we're not moving horizontally (checked above^) check if vsp is NOT 0 = do some checks:
 else if(vsp!=0) 
 {
 	
@@ -28,6 +28,7 @@ else if(vsp!=0)
 	y += sign(vsp) * moveSpeed;
 	vsp -= sign(vsp) * moveSpeed;
 	}
-}
+	
+	}
 //If hsp or vsp is 0 = we're not moving in either direction, switch state to idle 
 else state = states.idle;
