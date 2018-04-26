@@ -1,3 +1,29 @@
+
+//Moving animations
+// Change sprite based on what direction we're facing
+	if (moveDirection = 2) 
+{
+	sprite_index = spPlayer_movement_left;		
+}
+	
+if (moveDirection = 0)
+{
+	sprite_index = spPlayer_movement_right;		
+}
+	
+if (moveDirection = 1)
+{
+	sprite_index = spPlayer_movement_up;
+		
+}
+	
+if (moveDirection = 3)
+{
+	sprite_index = spPlayer_movement_down;
+}
+	
+
+
 if(hsp!=0) //If hsp is NOT 0, check some things to figure out if we're moving:
 {
 	if ((abs(hsp) - moveSpeed) <= 0)
@@ -30,5 +56,7 @@ else if(vsp!=0)
 	}
 	
 	}
+	
 //If hsp or vsp is 0 = we're not moving in either direction, switch state to idle 
 else state = states.idle;
+

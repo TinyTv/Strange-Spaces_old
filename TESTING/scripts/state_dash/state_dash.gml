@@ -1,4 +1,26 @@
-//THIS CODE SHOULD BE FINE DO NOT TOUCH 
+//Dash animations
+// Change sprite based on what direction we're facing
+if (moveDirection = 2) 
+{
+	sprite_index = spPlayer_dash_left;		
+}
+	
+if (moveDirection = 0)
+{
+	sprite_index = spPlayer_dash_right;		
+}
+	
+if (moveDirection = 1)
+{
+	sprite_index = spPlayer_dash_up;
+		
+}
+	
+if (moveDirection = 3)
+{
+	sprite_index = spPlayer_dash_down;
+}
+	
 
 if(hsp!=0)  //If hsp is NOT 0:
 {

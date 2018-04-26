@@ -64,10 +64,12 @@ if (state != states.move and state != states.dash) //if state is not move or das
 		
 		if (keyboard_check_pressed(vk_left))
 		{
+			
 			if (global.canAttack = true)
 			{
 				state = states.attack;
 				state_attack()
+				
 			}
 			else state = states.idle;
 		}
@@ -142,28 +144,4 @@ if (state != states.move and state != states.dash) //if state is not move or das
 	}
 	
 }
-
-
-	// Change sprite based on what direction we're facing
-	if (moveDirection = 2) 
-	{
-		sprite_index = spPlayer_left;		
-	}
-	
-	if (moveDirection = 0)
-	{
-		sprite_index = spPlayer_right;		
-	}
-	
-	if (moveDirection = 1)
-	{
-		sprite_index = spPlayer_up;
-		
-	}
-	
-	if (moveDirection = 3)
-	{
-		sprite_index = spPlayer_down;
-	}
-	
 
