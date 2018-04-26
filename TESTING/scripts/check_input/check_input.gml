@@ -85,9 +85,10 @@ if (state != states.move and state != states.dash) //if state is not move or das
         hsp = lengthdir_x(dashDistance * gridSize, moveDirection * 90);
         vsp = lengthdir_y(dashDistance * gridSize, moveDirection * 90);
         state = states.dash; //sets the state to dash
-                
-            
-        //Dash collision check 
+                           
+			   
+				   
+        //Dash collision check for walls/blocks (oWall)
         for(var i = 0;i<dashDistance;i++)//If i is smaller than Distance = add 1 to i but keep i the same, until i is = to dashDistance.
         {
             //Collision:
@@ -95,13 +96,32 @@ if (state != states.move and state != states.dash) //if state is not move or das
                 {
                     tempDashDistance = i; // If there's a wall before we can finish dashing, shorten the dash distance (using temporary variable)
 					break;
-			   }
-		  }    
+			   }   		
+			
+		  }   
+		  
+		 /*			     USE THIS CODE FOR DISABLING DASHING THROUGH ENEMIES OR OTHER SOLID OBJECTS
+        //Dash collision check for oDmg1 = can't dash through object oDmg1
+        for(var i = 0;i<dashDistance;i++)//If i is smaller than Distance = add 1 to i but keep i the same, until i is = to dashDistance.
+        {
+            //Collision:
+            if (place_meeting(oTest.x + sign(hsp) + sign(hsp)*(i*gridSize), oTest.y + sign(vsp) + sign(vsp)*(i*gridSize), oDmg1))
+                {
+                    tempDashDistance = i; // If there's a wall before we can finish dashing, shorten the dash distance (using temporary variable)
+					break;
+			   }   		
+			
+		  }  
+		  */
+		    
+        
         
 		//Set hsp and vsp again and dash
         hsp = lengthdir_x(tempDashDistance * gridSize, moveDirection * 90);
         vsp = lengthdir_y(tempDashDistance * gridSize, moveDirection * 90);
         return;
+		
+		
         
     }
 	
