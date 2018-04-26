@@ -64,10 +64,12 @@ if (state != states.move and state != states.dash) //if state is not move or das
 		
 		if (keyboard_check_pressed(vk_left))
 		{
+			
 			if (global.canAttack = true)
 			{
 				state = states.attack;
 				state_attack()
+				
 			}
 			else state = states.idle;
 		}
@@ -110,13 +112,12 @@ if (state != states.move and state != states.dash) //if state is not move or das
 			//Collision check
 	if (place_meeting(oTest.x + sign(hsp),oTest.y + sign(vsp),oWall))
 			{
-				 //if colliding, set state to idle and reset horizontal & vertical speeds
+					//if colliding, set state to idle and reset horizontal & vertical speeds
 				state = states.idle;
 				hsp = 0;
 				vsp = 0; 
 				
 			}
-	
 		
 	//Collision with oDmg1 does 1 dmg
 	if (place_meeting(oTest.x + sign(hsp), oTest.y + sign(vsp),oDmg1))
@@ -124,7 +125,7 @@ if (state != states.move and state != states.dash) //if state is not move or das
 		playerHealth = playerHealth - 1;
 		}	
 	
-	//Collision with oHazard block kills the player - make it so that the player is able to step on the tile, but dies if so
+	//Collision with oHazard block kills the player 
 	if (place_meeting(oTest.x + sign(hsp), oTest.y + sign(vsp),oHazard))
 		{
 		state = states.death;
@@ -132,7 +133,7 @@ if (state != states.move and state != states.dash) //if state is not move or das
 	
 		}
 						
-				else state = states.move;
+	else state = states.move;
 				
 		}
 	
@@ -140,30 +141,5 @@ if (state != states.move and state != states.dash) //if state is not move or das
 	{
 		state = states.idle;	
 	}
-	
-}
-
-
-	// Change sprite based on what direction we're facing
-	if (moveDirection = 2) 
-	{
-		sprite_index = spPlayer_left;		
-	}
-	
-	if (moveDirection = 0)
-	{
-		sprite_index = spPlayer_right;		
-	}
-	
-	if (moveDirection = 1)
-	{
-		sprite_index = spPlayer_up;
 		
-	}
-	
-	if (moveDirection = 3)
-	{
-		sprite_index = spPlayer_down;
-	}
-	
-
+}

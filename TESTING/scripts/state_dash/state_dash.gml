@@ -1,5 +1,28 @@
-//THIS CODE SHOULD BE FINE DO NOT TOUCH 
+//Dash animations
+// Change sprite based on what direction we're facing
+if (moveDirection = 2) 
+{
+	sprite_index = spPlayer_dash_left;		
+}
+	
+if (moveDirection = 0)
+{
+	sprite_index = spPlayer_dash_right;		
+}
+	
+if (moveDirection = 1)
+{
+	sprite_index = spPlayer_dash_up;
+		
+}
+	
+if (moveDirection = 3)
+{
+	sprite_index = spPlayer_dash_down;
+}
+	
 
+//Check stuff?!
 if(hsp!=0)  //If hsp is NOT 0:
 {
 	if ((abs(hsp) - dashSpeed) <= 0) //if hsp is less or equal to 0, run:
@@ -32,5 +55,6 @@ else if(vsp!=0)
 	}
 }
 
-//If not moving (hsp and vsp = 0), set state to idle
+//If not moving (hsp and vsp = 0), set idle
 else state = states.idle;
+
