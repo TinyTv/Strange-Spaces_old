@@ -1,6 +1,5 @@
 check_input()
 
-
 switch (state)
 {
 	case states.idle:

@@ -1,3 +1,5 @@
+//DO NOT TOUCH
+
 //Dash animations
 // Change sprite based on what direction we're facing
 if (moveDirection = 2) 

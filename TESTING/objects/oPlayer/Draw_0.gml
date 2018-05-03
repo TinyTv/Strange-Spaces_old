@@ -8,3 +8,5 @@ draw_text(0,0,"x:" + string(x)
 + "\nmoveDirection:" + string(moveDirection)
 + "\nState:" + string(state))
 
+draw_text(400,0,"attack Timer:" + string(global.canAttack))
+

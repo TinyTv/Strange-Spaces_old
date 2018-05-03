@@ -68,8 +68,7 @@ if (state != states.move and state != states.dash) //if state is not move or das
 			if (global.canAttack = true)
 			{
 				state = states.attack;
-				state_attack()
-				
+				state_attack()				
 			}
 			else state = states.idle;
 		}
@@ -112,10 +111,8 @@ if (state != states.move and state != states.dash) //if state is not move or das
 			   }   		
 			
 		  }  
-		  */
-		    
-        
-        
+		  */		    
+                
 		//Set hsp and vsp again and dash
         hsp = lengthdir_x(tempDashDistance * gridSize, moveDirection * 90);
         vsp = lengthdir_y(tempDashDistance * gridSize, moveDirection * 90);
@@ -124,8 +121,7 @@ if (state != states.move and state != states.dash) //if state is not move or das
 		
         
     }
-	
-	
+		
 	//Collisions for normal movement		
 	if (vsp !=0 or hsp !=0)//If is moving:
 	{
@@ -157,9 +153,11 @@ if (state != states.move and state != states.dash) //if state is not move or das
 				
 		}
 	
+	/*  This code doesn't do ANYTHING?!
 	else 
 	{
 		state = states.idle;	
 	}
+	*/
 		
 }
