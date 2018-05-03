@@ -3,7 +3,7 @@ moveSpeed = 8;
 dashDistance = 2; //dash moves the object 2 units (grids)
 dashSpeed = 40; 
 
-//Can attack, other instances can change this
+//Can attack, other instances can change this (global variable)
 global.canAttack = true;
 
 //Snaps oPlayer to grid
@@ -27,5 +27,5 @@ enum states
 	attack,
 }
 
-state = states.idle;
+global.state = states.idle;
 

@@ -56,5 +56,5 @@ else if(vsp!=0)
 }
 
 //If not moving (hsp and vsp = 0), set idle
-else state = states.idle;
+else global.state = states.idle;
 

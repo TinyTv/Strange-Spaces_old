@@ -1,5 +1,5 @@
 
-if (state != states.move and state != states.dash) //if state is not move or dash, check if a key is pressed:
+if (global.state != states.move and global.state != states.dash and global.state != states.attack) //if state is not move or dash or attack, check if a key is pressed:
 	{
 		
 	//Player Movement right
@@ -36,8 +36,7 @@ if (state != states.move and state != states.dash) //if state is not move or das
 		vsp = gridSize;
 	}
 	
-		
-	
+			
 	//Turning MoveDirection left 90 degrees
 	if (keyboard_check_pressed(ord("Q")))
 	{ 
@@ -45,8 +44,7 @@ if (state != states.move and state != states.dash) //if state is not move or das
 		if (moveDirection>3)
 		{
 			moveDirection = 0
-		}
-		
+		}		
 	}
 	
 	//Turning moveDirection right 90 degrees
@@ -59,22 +57,15 @@ if (state != states.move and state != states.dash) //if state is not move or das
 		}
 	}
 	
-	
-	//Attacking	- if key is pressed execute attack script
-		
+
+	//Attacking	- if key is pressed execute attack script		
+	if (global.canAttack = true)
+	{
 		if (keyboard_check_pressed(vk_left))
 		{
-			
-			if (global.canAttack = true)
-			{
-				state = states.attack;
-				state_attack()
-				
-			}
-			else state = states.idle;
+			global.state = states.attack;
 		}
-	
-		
+	}
 		
 	//Player ability Dash 
     if (keyboard_check_pressed(vk_down))
@@ -84,7 +75,7 @@ if (state != states.move and state != states.dash) //if state is not move or das
         //Takes moveDirection and sets the direction of our dash for checking collisions
         hsp = lengthdir_x(dashDistance * gridSize, moveDirection * 90);
         vsp = lengthdir_y(dashDistance * gridSize, moveDirection * 90);
-        state = states.dash; //sets the state to dash
+        global.state = states.dash; //sets the state to dash
                            
 			   
 				   
@@ -96,11 +87,10 @@ if (state != states.move and state != states.dash) //if state is not move or das
                 {
                     tempDashDistance = i; // If there's a wall before we can finish dashing, shorten the dash distance (using temporary variable)
 					break;
-			   }   		
-			
+			   }   					
 		  }   
 		  
-		 /*			     USE THIS CODE FOR DISABLING DASHING THROUGH ENEMIES OR OTHER SOLID OBJECTS
+		 //USE THIS CODE FOR DISABLING DASHING THROUGH ENEMIES OR OTHER SOLID OBJECTS
         //Dash collision check for oDmg1 = can't dash through object oDmg1
         for(var i = 0;i<dashDistance;i++)//If i is smaller than Distance = add 1 to i but keep i the same, until i is = to dashDistance.
         {
@@ -109,20 +99,13 @@ if (state != states.move and state != states.dash) //if state is not move or das
                 {
                     tempDashDistance = i; // If there's a wall before we can finish dashing, shorten the dash distance (using temporary variable)
 					break;
-			   }   		
-			
+			   }   					
 		  }  
-		  */
-		    
-        
-        
+		      
 		//Set hsp and vsp again and dash
         hsp = lengthdir_x(tempDashDistance * gridSize, moveDirection * 90);
         vsp = lengthdir_y(tempDashDistance * gridSize, moveDirection * 90);
-        return;
-		
-		
-        
+        return;		        
     }
 	
 	
@@ -133,10 +116,9 @@ if (state != states.move and state != states.dash) //if state is not move or das
 	if (place_meeting(oTest.x + sign(hsp),oTest.y + sign(vsp),oWall))
 			{
 					//if colliding, set state to idle and reset horizontal & vertical speeds
-				state = states.idle;
+				//state = states.idle;
 				hsp = 0;
-				vsp = 0; 
-				
+				vsp = 0; 				
 			}
 		
 	//Collision with oDmg1 does 1 dmg
@@ -148,18 +130,20 @@ if (state != states.move and state != states.dash) //if state is not move or das
 	//Collision with oHazard block kills the player 
 	if (place_meeting(oTest.x + sign(hsp), oTest.y + sign(vsp),oHazard))
 		{
-		state = states.death;
-		state_death()
-	
+		global.state = states.death;
+		state_death()	
 		}
 						
-	else state = states.move;
+	else global.state = states.move;
 				
-		}
+	}
 	
+	/* FOR SOME REASON THIS DOESN'T AFFECT ANYTHING?!
 	else 
 	{
-		state = states.idle;	
-	}
+		//global.state = states.idle;
+						
+	}*/
+	
 		
 }
