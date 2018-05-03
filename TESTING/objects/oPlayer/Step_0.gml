@@ -1,7 +1,7 @@
 check_input()
 
 
-switch (global.state)
+switch (state)
 {
 	case states.idle:
 		state_idle() 
@@ -23,6 +23,6 @@ switch (global.state)
 //Checks the player health, kills the player if health less than or equal to 0
 if (playerHealth <=0)
 	{
-	global.state = states.death;
+	state = states.death;
 	state_death()
 	}

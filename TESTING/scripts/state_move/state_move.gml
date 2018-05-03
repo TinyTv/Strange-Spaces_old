@@ -58,5 +58,5 @@ else if(vsp!=0)
 	}
 	
 //If hsp or vsp is 0 = we're not moving in either direction, switch state to idle 
-else global.state = states.idle;
+else state = states.idle;
 

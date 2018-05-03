@@ -22,16 +22,16 @@ if (moveDirection = 3)
 }
 
 
-if (global.state = states.idle)
+if (state = states.idle)
 	{
 		//Collision with oHazard block kills the player 
 	if (place_meeting(oTest.x + sign(hsp), oTest.y + sign(vsp),oHazard))
 		{
-		global.state = states.death;
+		state = states.death;
 		state_death()
 	
 		}
 						
-		else global.state = states.idle;
+		else state = states.idle;
 				
 }

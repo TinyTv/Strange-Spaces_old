@@ -5,17 +5,7 @@
     "name": "oBullet",
     "eventList": [
         {
-            "id": "0a42d174-f758-49ca-ba3e-8cfde921ab11",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "fd1f6929-6392-4ba0-b897-2ca564673d86",
-            "enumb": 0,
-            "eventtype": 4,
-            "m_owner": "6ef45762-dbd0-4ada-839a-e84362e299ae"
-        },
-        {
-            "id": "7de2e877-0186-4932-9984-5c1689af4b42",
+            "id": "8bf6cb3f-7ede-44a0-bafd-f79ade2f58f8",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,

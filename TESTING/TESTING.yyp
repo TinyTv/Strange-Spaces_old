@@ -215,14 +215,6 @@
             }
         },
         {
-            "Key": "37502429-3dcb-40cd-8f40-08a93c2a67c2",
-            "Value": {
-                "id": "23499837-8c99-4e8a-ba3d-13f6ae933bd4",
-                "resourcePath": "scripts\\state_attack\\state_attack.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "37694951-8013-4e2a-a860-d872c96ff571",
             "Value": {
                 "id": "97d62f44-36c6-4001-9251-bede68427fd2",
@@ -250,7 +242,7 @@
             "Key": "3c875998-efc0-4708-b937-d89d63b4166d",
             "Value": {
                 "id": "534f0e21-4205-48a3-b6b8-6255a032be9e",
-                "resourcePath": "scripts\\orig_state_attack\\orig_state_attack.yy",
+                "resourcePath": "scripts\\state_attack\\state_attack.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -715,12 +707,11 @@
         "9e8fc614-161d-4649-a8ef-61309774dce6",
         "f2952ba7-b520-43cd-9481-f89f7ded0ef0",
         "1dad3a69-d939-4502-ae8c-7ba2e6541dcb",
-        "37502429-3dcb-40cd-8f40-08a93c2a67c2",
+        "3c875998-efc0-4708-b937-d89d63b4166d",
         "37694951-8013-4e2a-a860-d872c96ff571",
         "8568f113-d855-4840-b2fa-44e076b3fc13",
         "de2459e3-254f-4e4f-8295-9c4f1bf4f96b",
         "535c088a-90c0-46ab-b45f-05fac6abb435",
-        "3c875998-efc0-4708-b937-d89d63b4166d",
         "6b2e74c7-03c1-4599-9f0c-511d94219edb",
         "a536ebb4-c524-4791-8c9d-9c6549d2d6d8"
     ],
