@@ -24,7 +24,6 @@ enum states
 	move,
 	dash,
 	death,
-	attack,
 }
 
 state = states.idle;

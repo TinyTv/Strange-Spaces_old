@@ -64,13 +64,7 @@ if (state != states.move and state != states.dash) //if state is not move or das
 		
 		if (keyboard_check_pressed(vk_left))
 		{
-			
-			if (global.canAttack = true)
-			{
-				state = states.attack;
-				state_attack()				
-			}
-			else state = states.idle;
+			scr_attack()
 		}
 	
 		
@@ -117,9 +111,7 @@ if (state != states.move and state != states.dash) //if state is not move or das
         hsp = lengthdir_x(tempDashDistance * gridSize, moveDirection * 90);
         vsp = lengthdir_y(tempDashDistance * gridSize, moveDirection * 90);
         return;
-		
-		
-        
+		        
     }
 		
 	//Collisions for normal movement		
