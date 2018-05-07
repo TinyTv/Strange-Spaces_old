@@ -1,24 +1,22 @@
 //Idle animations
 // Change sprite based on what direction we're facing
-if (faceDirection = 0)
+if (moveDirection = 2) 
+{
+	sprite_index = spPlayer_idle_left;		
+}
+	
+if (moveDirection = 0)
 {
 	sprite_index = spPlayer_idle_right;		
 }
 	
+if (moveDirection = 1)
+{
+	sprite_index = spPlayer_idle_up;
+		
+}
 	
-if (faceDirection = 1)
-{
-	sprite_index = spPlayer_idle_up;	
-}
-
-
-if (faceDirection = 2) 
-{
-	sprite_index = spPlayer_idle_left;		
-}
-
-
-if (faceDirection = 3)
+if (moveDirection = 3)
 {
 	sprite_index = spPlayer_idle_down;
 }

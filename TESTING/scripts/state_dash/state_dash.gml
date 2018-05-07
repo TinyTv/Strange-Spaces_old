@@ -1,24 +1,22 @@
-//DO NOT TOUCH
-
 //Dash animations
 // Change sprite based on what direction we're facing
-if (faceDirection = 2) 
+if (moveDirection = 2) 
 {
 	sprite_index = spPlayer_dash_left;		
 }
 	
-if (faceDirection = 0)
+if (moveDirection = 0)
 {
 	sprite_index = spPlayer_dash_right;		
 }
 	
-if (faceDirection = 1)
+if (moveDirection = 1)
 {
 	sprite_index = spPlayer_dash_up;
 		
 }
 	
-if (faceDirection = 3)
+if (moveDirection = 3)
 {
 	sprite_index = spPlayer_dash_down;
 }

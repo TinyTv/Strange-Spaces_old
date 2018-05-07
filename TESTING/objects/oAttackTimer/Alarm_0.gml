@@ -2,4 +2,6 @@
 instance_destroy(oBullet);
 
 global.canAttack = true;
-instance_destroy();
+state = states.idle;
+
+instance_destroy(oAttackTimer);

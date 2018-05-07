@@ -1,5 +1,5 @@
 {
-    "id": "4a92f06d-d973-4eff-a94b-5670243188e9",
+    "id": "3c875998-efc0-4708-b937-d89d63b4166d",
     "modelName": "GMScript",
     "mvc": "1.0",
     "name": "state_attack",

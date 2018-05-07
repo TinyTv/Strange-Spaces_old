@@ -1,11 +1,11 @@
 
-if (state != states.move and state != states.dash and state != states.attack) //if state is not move or dash, check if a key is pressed:
+if (state != states.move and state != states.dash) //if state is not move or dash, check if a key is pressed:
 	{
 		
 	//Player Movement right
 	if (keyboard_check_pressed(ord("D")))
 	{
-		moveDirection = 0;
+		/*moveDirection = 0;*/
 		hsp = gridSize;
 		vsp = 0;
 	}
@@ -14,7 +14,7 @@ if (state != states.move and state != states.dash and state != states.attack) //
 	//Player movement left
 		if (keyboard_check_pressed(ord("A")))
 	{
-		moveDirection = 2;
+		/*moveDirection = 2;*/
 		hsp = -gridSize;
 		vsp = 0;
 	}
@@ -23,7 +23,7 @@ if (state != states.move and state != states.dash and state != states.attack) //
 	//Player movement up
 	if (keyboard_check_pressed(ord("W")))
 	{
-		moveDirection = 1;
+		/*moveDirection = 1;*/
 		hsp = 0;
 		vsp = -gridSize;
 	}
@@ -31,42 +31,47 @@ if (state != states.move and state != states.dash and state != states.attack) //
 	//Player movement down
 	if (keyboard_check_pressed(ord("S")))
 	{ 
-		moveDirection = 3;
+		/*moveDirection = 3;*/
 		hsp = 0;
 		vsp = gridSize;
 	}
 	
 		
 	
-	//Turning faceDirection left 90 degrees
+	//Turning MoveDirection left 90 degrees
 	if (keyboard_check_pressed(ord("Q")))
 	{ 
-		faceDirection = faceDirection+1
-		if (faceDirection>3)
+		moveDirection = moveDirection+1
+		if (moveDirection>3)
 		{
-			faceDirection = 0
+			moveDirection = 0
 		}
 		
 	}
 	
-	//Turning faceDirection right 90 degrees
+	//Turning moveDirection right 90 degrees
 	if (keyboard_check_pressed(ord("E")))
 	{ 
-		faceDirection = faceDirection-1
-		if (faceDirection<0)
+		moveDirection = moveDirection-1
+		if (moveDirection<0)
 		{
-			faceDirection = 3
+			moveDirection = 3
 		}
 	}
 	
 	
 	//Attacking	- if key is pressed execute attack script
-
 		
 		if (keyboard_check_pressed(vk_left))
 		{
-
+			
+			if (global.canAttack = true)
+			{
 				state = states.attack;
+				state_attack()
+				
+			}
+			else state = states.idle;
 		}
 	
 		
@@ -76,9 +81,9 @@ if (state != states.move and state != states.dash and state != states.attack) //
     { 
         var tempDashDistance = dashDistance;
         
-        //Takes faceDirection and sets the direction of our dash for checking collisions
-        hsp = lengthdir_x(dashDistance * gridSize, faceDirection * 90);
-        vsp = lengthdir_y(dashDistance * gridSize, faceDirection * 90);
+        //Takes moveDirection and sets the direction of our dash for checking collisions
+        hsp = lengthdir_x(dashDistance * gridSize, moveDirection * 90);
+        vsp = lengthdir_y(dashDistance * gridSize, moveDirection * 90);
         state = states.dash; //sets the state to dash
                            
 			   
@@ -107,15 +112,20 @@ if (state != states.move and state != states.dash and state != states.attack) //
 			   }   		
 			
 		  }  
-		  */		    
-                
+		  */
+		    
+        
+        
 		//Set hsp and vsp again and dash
-        hsp = lengthdir_x(tempDashDistance * gridSize, faceDirection * 90);
-        vsp = lengthdir_y(tempDashDistance * gridSize, faceDirection * 90);
+        hsp = lengthdir_x(tempDashDistance * gridSize, moveDirection * 90);
+        vsp = lengthdir_y(tempDashDistance * gridSize, moveDirection * 90);
         return;
-		        
-    }
 		
+		
+        
+    }
+	
+	
 	//Collisions for normal movement		
 	if (vsp !=0 or hsp !=0)//If is moving:
 	{
@@ -147,11 +157,9 @@ if (state != states.move and state != states.dash and state != states.attack) //
 				
 		}
 	
-	/*  This code doesn't do ANYTHING?!
 	else 
 	{
 		state = states.idle;	
 	}
-	*/
 		
 }
