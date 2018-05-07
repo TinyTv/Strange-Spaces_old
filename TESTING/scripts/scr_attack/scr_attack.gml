@@ -1,23 +1,23 @@
 if(global.canAttack=true)
 {
-	//Take moveDirection, create object oBullet on the next grid from the oPlayer
-	if (moveDirection = 2) 
+	//Take faceDirection, create object oBullet on the next grid from the oPlayer
+	if (faceDirection = 2) 
 	{
 		instance_create_layer(x-80,y,"Bullets",oBullet);		
 	}
 	
-	if (moveDirection = 0)
+	if (faceDirection = 0)
 	{
 		instance_create_layer(x+80,y,"Bullets",oBullet); 	
 	}
 	
-	if (moveDirection = 1)
+	if (faceDirection = 1)
 	{
 		instance_create_layer(x,y-80,"Bullets",oBullet);
 		
 	}
 	
-	if (moveDirection = 3)
+	if (faceDirection = 3)
 	{
 		instance_create_layer(x,y+80,"Bullets",oBullet);
 	}	
