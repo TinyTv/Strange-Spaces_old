@@ -2,7 +2,7 @@
     "id": "38ada92c-afb5-48c7-8ea3-f5c16557f942",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "oGoal_1",
+    "name": "oGoal1",
     "eventList": [
         
     ],
