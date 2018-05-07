@@ -93,7 +93,7 @@ if (state != states.move and state != states.dash) //if state is not move or das
 			
 		  }   
 		  
-		 /*			     USE THIS CODE FOR DISABLING DASHING THROUGH ENEMIES OR OTHER SOLID OBJECTS
+		 // USE THIS CODE FOR DISABLING DASHING THROUGH ENEMIES OR OTHER SOLID OBJECTS
         //Dash collision check for oDmg1 = can't dash through object oDmg1
         for(var i = 0;i<dashDistance;i++)//If i is smaller than Distance = add 1 to i but keep i the same, until i is = to dashDistance.
         {
@@ -105,7 +105,7 @@ if (state != states.move and state != states.dash) //if state is not move or das
 			   }   		
 			
 		  }  
-		  */		    
+		  		    
                 
 		//Set hsp and vsp again and dash
         hsp = lengthdir_x(tempDashDistance * gridSize, faceDirection * 90);
