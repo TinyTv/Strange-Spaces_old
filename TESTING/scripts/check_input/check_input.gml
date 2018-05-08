@@ -44,7 +44,7 @@ if (state != states.move and state != states.dash) //if state is not move or das
 		faceDirection = faceDirection+1
 		if (faceDirection>3)
 		{
-			faceDirection = 0
+			faceDirection = 0;
 		}
 		
 	}
@@ -55,7 +55,7 @@ if (state != states.move and state != states.dash) //if state is not move or das
 		faceDirection = faceDirection-1
 		if (faceDirection<0)
 		{
-			faceDirection = 3
+			faceDirection = 3;
 		}
 	}
 	
