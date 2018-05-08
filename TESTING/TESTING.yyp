@@ -183,6 +183,14 @@
             }
         },
         {
+            "Key": "245c42b3-48af-4ddd-a2da-5de34901df96",
+            "Value": {
+                "id": "f3bf1b56-1856-4401-b3e3-e273eaead08b",
+                "resourcePath": "sprites\\spAttackEffect_placeholder\\spAttackEffect_placeholder.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "27c0503e-04cd-463d-a254-d6ebdd7d20ca",
             "Value": {
                 "id": "d2244204-3365-400b-92d2-ff4d28faffa0",
@@ -487,6 +495,14 @@
             }
         },
         {
+            "Key": "9ef0be96-a67f-4f2b-afca-57216e884f52",
+            "Value": {
+                "id": "4edc3f99-9013-4a09-8a0f-2f5130458a3d",
+                "resourcePath": "objects\\oAttackEffect\\oAttackEffect.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "a536ebb4-c524-4791-8c9d-9c6549d2d6d8",
             "Value": {
                 "id": "6ce3b021-efa8-4eb1-a94f-c9173aa6614e",
@@ -586,7 +602,7 @@
             "Key": "c80be432-f198-4da5-bfd9-ebaeafdf40d2",
             "Value": {
                 "id": "b7397083-6d7a-42c5-b3dc-fc46737ad6c9",
-                "resourcePath": "scripts\\OLD_state_attack\\OLD_state_attack.yy",
+                "resourcePath": "scripts\\old_state_attack\\old_state_attack.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -709,12 +725,21 @@
                 "resourcePath": "objects\\oWall\\oWall.yy",
                 "resourceType": "GMObject"
             }
+        },
+        {
+            "Key": "fef4d252-4272-4437-8965-cbf106d29b0a",
+            "Value": {
+                "id": "bfc6c913-6c64-4c08-bff8-99d3fad45409",
+                "resourcePath": "scripts\\state_attack\\state_attack.yy",
+                "resourceType": "GMScript"
+            }
         }
     ],
     "script_order": [
         "9e8fc614-161d-4649-a8ef-61309774dce6",
         "f2952ba7-b520-43cd-9481-f89f7ded0ef0",
         "1dad3a69-d939-4502-ae8c-7ba2e6541dcb",
+        "fef4d252-4272-4437-8965-cbf106d29b0a",
         "3c875998-efc0-4708-b937-d89d63b4166d",
         "37694951-8013-4e2a-a860-d872c96ff571",
         "8568f113-d855-4840-b2fa-44e076b3fc13",
