@@ -1,6 +1,5 @@
 check_input()
 
-
 switch (state)
 {
 	case states.idle:
@@ -14,9 +13,6 @@ switch (state)
 		break;
 	case states.death:
 		state_death()
-		break;
-	case states.attack:
-		state_attack()
 		break;
 }
 

@@ -16,7 +16,8 @@ playerHealth = 1
 
 hsp = 0;
 vsp = 0;
-moveDirection = 0 //oPlayer is "facing" this direction
+moveDirection = 0
+faceDirection = 0 //oPlayer is "facing" this direction
 
 enum states
 {
@@ -24,7 +25,6 @@ enum states
 	move,
 	dash,
 	death,
-	attack,
 }
 
 state = states.idle;
