@@ -3,26 +3,25 @@
 
 //Moving animations
 // Change sprite based on what direction we're facing
-	if (faceDirection = 2) 
-{
-	sprite_index = spPlayer_movement_left;		
-}
-	
 if (faceDirection = 0)
-{
-	sprite_index = spPlayer_movement_right;		
-}
+	{
+		sprite_index = spPlayer_movement_right;		
+	}
 	
 if (faceDirection = 1)
-{
-	sprite_index = spPlayer_movement_up;
-		
-}
-	
+	{
+		sprite_index = spPlayer_movement_up;
+	}
+
+if (faceDirection = 2) 
+	{
+		sprite_index = spPlayer_movement_left;		
+	}
+
 if (faceDirection = 3)
-{
-	sprite_index = spPlayer_movement_down;
-}
+	{
+		sprite_index = spPlayer_movement_down;
+	}
 	
 
 

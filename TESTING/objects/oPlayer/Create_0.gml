@@ -12,11 +12,12 @@ y = round(y / gridSize) * gridSize;
 
 depth = -2
 
+
 playerHealth = 1
 
 hsp = 0;
 vsp = 0;
-moveDirection = 0
+moveDirection = 0 //oPlayer has moved this direction
 faceDirection = 0 //oPlayer is "facing" this direction
 
 enum states
@@ -25,6 +26,7 @@ enum states
 	move,
 	dash,
 	death,
+	attack,
 }
 
 state = states.idle;
