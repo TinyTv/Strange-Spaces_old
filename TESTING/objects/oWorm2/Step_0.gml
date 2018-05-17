@@ -1,18 +1,11 @@
 if (Worm2Health > 0)
 {
-
-	
-	
-/*if !instance_exists(oPlayer) or instance_exists(oPlayer)
-	{
-		instance_destroy(oDmg1);
-	}*/
 	
 	
 ////////////////////////////////////////////////////////////////////////////////////////////////////	
 
 			//Check right tile and Animation for attacking right
-	if (place_meeting(oWorm2.x + 80, oWorm2.y, oTest))
+	if (place_meeting(oWorm2.x + 80, oWorm2.y, oTest) and !instance_exists(oWormBasicTimer))
 					{
 						//attack windup to right
 						instance_create_depth(0, 0, 1, oWormBasicTimer);
@@ -29,7 +22,7 @@ if (Worm2Health > 0)
 ////////////////////////////////////////////////////////////////////////////////////////////////////		
 			
 			// Check tile above and animation for attacking up
-	if (place_meeting(oWorm2.x, oWorm2.y - 80, oTest))
+	if (place_meeting(oWorm2.x, oWorm2.y - 80, oTest) and !instance_exists(oWormBasicTimer))
 					{
 						//attack windup to up
 						instance_create_depth(0, 0, 1, oWormBasicTimer);
@@ -46,7 +39,7 @@ if (Worm2Health > 0)
 ////////////////////////////////////////////////////////////////////////////////////////////////////		
 
 						// Check tile left and animation for attacking left
-	if (place_meeting(oWorm2.x - 80, oWorm2.y, oTest))
+	if (place_meeting(oWorm2.x - 80, oWorm2.y, oTest) and !instance_exists(oWormBasicTimer))
 					{
 						//attack windup to left
 						instance_create_depth(0, 0, 1, oWormBasicTimer);
@@ -62,7 +55,7 @@ if (Worm2Health > 0)
 ////////////////////////////////////////////////////////////////////////////////////////////////////			
 		
 						// Check tile below and animation for attacking down
-	if (place_meeting(oWorm2.x, oWorm2.y + 80, oTest))
+	if (place_meeting(oWorm2.x, oWorm2.y + 80, oTest) and !instance_exists(oWormBasicTimer))
 					{
 						//mato hyökky alas tähä
 						instance_create_depth(0, 0, 1, oWormBasicTimer);
