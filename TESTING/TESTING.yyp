@@ -191,14 +191,6 @@
             }
         },
         {
-            "Key": "252dc0e0-ccff-457f-b176-7085078f692d",
-            "Value": {
-                "id": "3680626c-c98d-4534-a0f1-ab70d88b6763",
-                "resourcePath": "objects\\oWorm2\\oWorm2.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "27c0503e-04cd-463d-a254-d6ebdd7d20ca",
             "Value": {
                 "id": "d2244204-3365-400b-92d2-ff4d28faffa0",
@@ -284,6 +276,14 @@
                 "id": "42c279c8-715e-4809-bca9-e465e4e989fd",
                 "resourcePath": "rooms\\room1\\room1.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "4656f13c-b57f-47cf-90da-a4e45235f36b",
+            "Value": {
+                "id": "fc431913-6609-430f-b208-f9c2e7c99f25",
+                "resourcePath": "scripts\\scr_worm_basic_attack\\scr_worm_basic_attack.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -434,7 +434,7 @@
             "Key": "7aadc664-9364-4e38-bb59-8360a39c83cc",
             "Value": {
                 "id": "983520b3-b80c-45d3-ade7-f98fbed2a94e",
-                "resourcePath": "objects\\oWorm1Parent\\oWorm1Parent.yy",
+                "resourcePath": "objects\\oWorm1\\oWorm1.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -490,7 +490,7 @@
             "Key": "8b2a82b7-32bc-47ac-8591-48455615e979",
             "Value": {
                 "id": "0d30da7a-100d-4e64-9e8c-9c4c2b7f57b9",
-                "resourcePath": "objects\\oWorm2Parent\\oWorm2Parent.yy",
+                "resourcePath": "objects\\oWorm2\\oWorm2.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -652,14 +652,6 @@
                 "id": "e8785b53-d0af-42f6-adcc-c77f159bcbf2",
                 "resourcePath": "views\\bb1a53ea-1b7b-4b7c-9bf2-dfe23df3affc.yy",
                 "resourceType": "GMFolder"
-            }
-        },
-        {
-            "Key": "bffde885-d2ea-4465-899f-7b0268d66793",
-            "Value": {
-                "id": "80a36c84-f39b-4cf5-92b8-b9b31958afbd",
-                "resourcePath": "objects\\oWorm1\\oWorm1.yy",
-                "resourceType": "GMObject"
             }
         },
         {
@@ -829,6 +821,7 @@
         "1dad3a69-d939-4502-ae8c-7ba2e6541dcb",
         "fef4d252-4272-4437-8965-cbf106d29b0a",
         "3c875998-efc0-4708-b937-d89d63b4166d",
+        "4656f13c-b57f-47cf-90da-a4e45235f36b",
         "37694951-8013-4e2a-a860-d872c96ff571",
         "8568f113-d855-4840-b2fa-44e076b3fc13",
         "de2459e3-254f-4e4f-8295-9c4f1bf4f96b",

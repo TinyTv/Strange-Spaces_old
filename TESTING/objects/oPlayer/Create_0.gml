@@ -12,8 +12,8 @@ y = round(y / gridSize) * gridSize;
 
 depth = -2
 
-playerHealth = 1;
 
+playerHealth = 1
 
 hsp = 0;
 vsp = 0;

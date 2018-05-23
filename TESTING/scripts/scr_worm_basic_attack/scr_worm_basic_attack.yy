@@ -1,8 +1,8 @@
 {
-    "id": "f9566b6c-83da-4240-a374-3a29d4ced697",
+    "id": "4656f13c-b57f-47cf-90da-a4e45235f36b",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "state_incapacitated",
+    "name": "scr_worm_basic_attack",
     "IsCompatibility": false,
     "IsDnD": false
 }

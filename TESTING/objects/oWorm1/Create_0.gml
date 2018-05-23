@@ -1,7 +1,7 @@
 /// @description Wide attack Worm
-Worm1Health = 3;
-global.WormAlert1 = false;
 
+global.WormAlert1 = true;
+Worm1Health = 3;
 WormAttackLeft = 0;
 WormAttackRight = 0;
 WormAttackUp = 0;
