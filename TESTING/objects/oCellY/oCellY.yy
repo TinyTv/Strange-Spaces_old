@@ -1,28 +1,38 @@
 {
-    "id": "6ef45762-dbd0-4ada-839a-e84362e299ae",
+    "id": "955c74ab-88b4-403d-a10f-98c2389d76f8",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "oBullet",
+    "name": "oCellY",
     "eventList": [
         {
-            "id": "8bf6cb3f-7ede-44a0-bafd-f79ade2f58f8",
+            "id": "fca861f6-e90a-454a-bb59-af284beee039",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 0,
-            "m_owner": "6ef45762-dbd0-4ada-839a-e84362e299ae"
+            "m_owner": "955c74ab-88b4-403d-a10f-98c2389d76f8"
         },
         {
-            "id": "a60b459c-83b6-4ec9-b71c-e6b073f3da22",
+            "id": "0906103c-239c-4ac4-a18f-1fa1fb6aee0f",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
-            "collisionObjectId": "1315fd4e-a901-4da3-a0eb-0bfa9b5fbdd6",
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 3,
+            "m_owner": "955c74ab-88b4-403d-a10f-98c2389d76f8"
+        },
+        {
+            "id": "344207b8-5f3a-4603-846d-4deddc5f3203",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "34ee66ff-f09e-4977-b73e-20b6a60bf1e9",
             "enumb": 0,
             "eventtype": 4,
-            "m_owner": "6ef45762-dbd0-4ada-839a-e84362e299ae"
+            "m_owner": "955c74ab-88b4-403d-a10f-98c2389d76f8"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -41,23 +51,8 @@
     "physicsShape": 1,
     "physicsShapePoints": null,
     "physicsStartAwake": true,
-    "properties": [
-        {
-            "id": "7a99c508-19c3-4616-a8ed-b72b28ad0796",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "0",
-            "varName": "variable_name",
-            "varType": 0
-        }
-    ],
+    "properties": null,
     "solid": false,
-    "spriteId": "56931c8e-adde-4aaf-ba07-62e7ccc6968d",
-    "visible": false
+    "spriteId": "44fc0203-e844-4e0f-82d4-ebd14f661779",
+    "visible": true
 }
