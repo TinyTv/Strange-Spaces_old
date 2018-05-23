@@ -1,5 +1,4 @@
-
-if (state != states.move and state != states.dash and state != states.attack) //if state is not move or dash, check if a key is pressed:
+if (state != states.move and state != states.dash and state != states.attack and state != states.incapacitated) //if state is not move or dash, check if a key is pressed:
 	{
 	
 		
@@ -22,7 +21,6 @@ if (state != states.move and state != states.dash and state != states.attack) //
 		oPlayer.state = states.move;
 	}
 
-
 	//Player movement up
 	if (keyboard_check_pressed(ord("W")))
 	{
@@ -44,7 +42,7 @@ if (state != states.move and state != states.dash and state != states.attack) //
 		
 	
 	//Turning faceDirection left 90 degrees
-	if (keyboard_check_pressed(ord("Q")))
+	if (keyboard_check_pressed(vk_left))
 	{ 
 		faceDirection = faceDirection+1
 		if (faceDirection>3)
@@ -55,7 +53,7 @@ if (state != states.move and state != states.dash and state != states.attack) //
 	}
 	
 	//Turning faceDirection right 90 degrees
-	if (keyboard_check_pressed(ord("E")))
+	if (keyboard_check_pressed(vk_right))
 	{ 
 		faceDirection = faceDirection-1
 		if (faceDirection<0)
@@ -67,7 +65,7 @@ if (state != states.move and state != states.dash and state != states.attack) //
 	
 	//Attacking	- if key is pressed execute attack script
 		
-		if (keyboard_check_pressed(vk_left) and state = states.idle) 
+		if (keyboard_check_pressed(vk_space) and state = states.idle) 
 		{
 			state = states.attack;
 		}
@@ -75,30 +73,33 @@ if (state != states.move and state != states.dash and state != states.attack) //
 		
 		
 	//Player ability Dash 
-    if (keyboard_check_pressed(vk_down))
-    { 
+    if (keyboard_check_pressed(vk_shift))
+    {
+
         var tempDashDistance = dashDistance;
-        
+
         //Takes faceDirection and sets the direction of our dash for checking collisions
-        hsp = lengthdir_x(dashDistance * gridSize, faceDirection * 90);
-        vsp = lengthdir_y(dashDistance * gridSize, faceDirection * 90);
+		hsp = lengthdir_x(dashDistance * gridSize, faceDirection * 90);
+		vsp = lengthdir_y(dashDistance * gridSize, faceDirection * 90);	
         state = states.dash; //sets the state to dash
-                           
-			   
-				   
+		
+		
         //Dash collision check for walls/blocks (oWall)
         for(var i = 0;i<dashDistance;i++)//If i is smaller than Distance = add 1 to i but keep i the same, until i is = to dashDistance.
         {
             //Collision:
             if (place_meeting(oTest.x + sign(hsp) + sign(hsp)*(i*gridSize), oTest.y + sign(vsp) + sign(vsp)*(i*gridSize), oWall))
                 {
-                    tempDashDistance = i; // If there's a wall before we can finish dashing, shorten the dash distance (using temporary variable)
+                    tempDashDistance = i; // If there's a wall before we can finnish dashing, shorten the dash distance (using temporary variable)
+					
 					break;
+
 			    } 
 			
 		  }   
+
 		  
-		 //     USE THIS CODE FOR DISABLING DASHING THROUGH ENEMIES OR OTHER SOLID OBJECTS
+		//USE THIS CODE FOR DISABLING DASHING THROUGH ENEMIES OR OTHER SOLID OBJECTS
         //Dash collision check for oDmg1 = can't dash through object oDmg1
         for(var i = 0;i<dashDistance;i++)//If i is smaller than Distance = add 1 to i but keep i the same, until i is = to dashDistance.
         {
@@ -117,15 +118,11 @@ if (state != states.move and state != states.dash and state != states.attack) //
                     tempDashDistance = i; // If there's a wall before we can finish dashing, shorten the dash distance (using temporary variable)
 					break;
 			   }   		
-			
-		  }  
-		  	    
+		  }
                 
 		//Set hsp and vsp again and dash
         hsp = lengthdir_x(tempDashDistance * gridSize, faceDirection * 90);
-        vsp = lengthdir_y(tempDashDistance * gridSize, faceDirection * 90);
-        return;
-		        
+        vsp = lengthdir_y(tempDashDistance * gridSize, faceDirection * 90);        
     }
 		
 	//Collisions for normal movement		
@@ -134,7 +131,7 @@ if (state != states.move and state != states.dash and state != states.attack) //
 			//Collision check
 	if (place_meeting(oTest.x + sign(hsp),oTest.y + sign(vsp),oWall))
 			{
-					//if colliding, set state to idle and reset horizontal & vertical speeds
+				//if colliding, set state to idle and reset horizontal & vertical speeds
 				state = states.idle;
 				hsp = 0;
 				vsp = 0; 
@@ -147,6 +144,22 @@ if (state != states.move and state != states.dash and state != states.attack) //
 				state = states.idle;
 				hsp = 0;
 				vsp = 0; 
+		
+	//Collision with oDmg1 does 1 dmg
+	if (place_meeting(oTest.x + sign(hsp), oTest.y + sign(vsp),oDmg1))
+		{
+		playerHealth = playerHealth - 1;
+		}	
+	
+	//Collision with oHazard block kills the player 
+	//if (place_meeting(oTest.x + sign(hsp), oTest.y + sign(vsp),oHazard))
+	//	{
+	//	state = states.death;
+	//	state_death()
+	
+	//	}
+						
+	else state = states.move;
 				
 			}
 			
@@ -167,6 +180,40 @@ if (state != states.move and state != states.dash and state != states.attack) //
 	//	state = states.death;
 	//	state_death()
 	//	}
+            "__type": "GMRInstanceLayer_Model:#YoYoStudio.MVCFormat",
+            "name": "Effects",
+            "id": "dd3e799a-85d7-491a-b38c-b44d8e486f07",
+            "depth": 100,
+            "grid_x": 80,
+            "grid_y": 80,
+            "hierarchyFrozen": false,
+            "hierarchyVisible": true,
+            "inheritLayerDepth": false,
+            "inheritLayerSettings": false,
+            "inheritSubLayers": false,
+            "inheritVisibility": false,
+            "instances": [
+
+            ],
+            "layers": [
+
+            ],
+            "m_parentID": "00000000-0000-0000-0000-000000000000",
+            "m_serialiseFrozen": false,
+            "modelName": "GMRInstanceLayer",
+            "mvc": "1.0",
+            "userdefined_depth": false,
+            "visible": true
+        },
+        {
+            "__type": "GMRInstanceLayer_Model:#YoYoStudio.MVCFormat",
+            "name": "Player",
+            "id": "a31389d4-33cb-48f1-bd46-1adbb4587edc",
+            "depth": 200,
+            "grid_x": 80,
+            "grid_y": 80,
+            "hierarchyFrozen": false,
+            "hierarchyVisible": true
 				
 }
 

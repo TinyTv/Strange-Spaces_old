@@ -287,6 +287,15 @@
             }
         },
         {
+            "Key": "44fc0203-e844-4e0f-82d4-ebd14f661779",
+            "Value": {
+                "id": "3bd32b7c-3f06-4ff5-928f-498b4d7b7e90",
+                "resourcePath": "sprites\\spCellY\\spCellY.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+
+        {
             "Key": "4bf3b007-2126-4a2a-a520-a0e34a8f353c",
             "Value": {
                 "id": "3e3da1a7-74d6-48ef-978d-0c120d6729e5",
@@ -351,6 +360,14 @@
             }
         },
         {
+            "Key": "5a43b250-419d-4720-b187-abd0945b0fab",
+            "Value": {
+                "id": "3261b713-02fd-444a-bb18-eca5a0c0bcb4",
+                "resourcePath": "objects\\oGameControl\\oGameControl.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "5a46141e-545b-406f-8a45-d938e94336f0",
             "Value": {
                 "id": "91f612c6-b08c-4d10-b9e2-e755f096f328",
@@ -371,6 +388,14 @@
             "Value": {
                 "id": "aa61ccc6-bc9d-45c9-87b6-5e12497e3c71",
                 "resourcePath": "sprites\\spAttackTimer\\spAttackTimer.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "6602f6d3-e2d2-4f06-ba39-3679f241034d",
+            "Value": {
+                "id": "cf52bc92-5d3a-44dd-ad00-e8e12ca05470",
+                "resourcePath": "sprites\\spFallBlock\\spFallBlock.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -783,11 +808,13 @@
             }
         },
         {
-            "Key": "f8752ff4-46c3-46fc-93d0-b0b13d470290",
+
+            "Key": "f9566b6c-83da-4240-a374-3a29d4ced697",
             "Value": {
-                "id": "099bf811-3203-4d39-9a84-0198aca9703d",
-                "resourcePath": "views\\f8752ff4-46c3-46fc-93d0-b0b13d470290.yy",
-                "resourceType": "GMFolder"
+                "id": "a67d9fd9-13ec-4ca0-a655-d6e98862560d",
+                "resourcePath": "scripts\\state_incapacitated\\state_incapacitated.yy",
+                "resourceType": "GMScript"
+
             }
         },
         {
@@ -825,6 +852,7 @@
     ],
     "script_order": [
         "9e8fc614-161d-4649-a8ef-61309774dce6",
+        "f9566b6c-83da-4240-a374-3a29d4ced697",
         "f2952ba7-b520-43cd-9481-f89f7ded0ef0",
         "1dad3a69-d939-4502-ae8c-7ba2e6541dcb",
         "fef4d252-4272-4437-8965-cbf106d29b0a",

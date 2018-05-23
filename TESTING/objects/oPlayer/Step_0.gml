@@ -17,6 +17,10 @@ switch (state)
 	case states.attack:
 		state_attack()
 		break;
+	case states.incapacitated:
+		state_incapacitated()
+		break;
+	
 }
 
 //Checks the player health, kills the player if health less than or equal to 0

@@ -1,8 +1,8 @@
 gridSize = 80;
 moveSpeed = 8;
 dashDistance = 2; //dash moves the object 2 units (grids)
-dashSpeed = 40; 
-
+dashSpeed = 40;
+global.dashCharge = 3;
 //Can attack, other instances can change this
 global.canAttack = true;
 
@@ -11,6 +11,7 @@ x = round(x / gridSize) * gridSize;
 y = round(y / gridSize) * gridSize;
 
 depth = -2
+
 
 playerHealth = 1;
 
@@ -27,6 +28,7 @@ enum states
 	dash,
 	death,
 	attack,
+	incapacitated,
 }
 
 state = states.idle;
