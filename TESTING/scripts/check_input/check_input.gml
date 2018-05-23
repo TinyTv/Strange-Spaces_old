@@ -169,6 +169,7 @@ if (state != states.move and state != states.dash and state != states.attack) //
 	//	state = states.death;
 	//	state_death()
 	//	}
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> parent of 0cd0c63... Nyyh
@@ -181,6 +182,8 @@ if (state != states.move and state != states.dash and state != states.attack) //
 						
 	else state = states.move;
 >>>>>>> parent of 0cd0c63... Nyyh
+=======
+>>>>>>> parent of 5bc5a06... merge test, probably fails lmao.
 				
 }
 

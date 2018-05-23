@@ -141,10 +141,14 @@
         "fd9d4659-96f8-4dd5-85b2-bf66e85c9409",
         "463c04a6-0c3e-4c98-b6c9-d78fa96d77e4",
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of 5bc5a06... merge test, probably fails lmao.
         "7448f875-cd69-452f-8c91-734f1e04f963",
         "b8a03340-a1cd-42ac-91cb-2139519cf668",
         "66134371-c506-42fd-9692-94a11723a29e",
         "6f5c480e-7787-4281-935f-11a797a5af8d"
+<<<<<<< HEAD
 =======
         "0370ef53-8f43-4532-8123-ac7d606c7084",
         "0cd07456-57a5-4d49-9b39-efe171a03e48",
@@ -155,6 +159,8 @@
 >>>>>>> parent of 0cd0c63... Nyyh
 =======
 >>>>>>> parent of 0cd0c63... Nyyh
+=======
+>>>>>>> parent of 5bc5a06... merge test, probably fails lmao.
     ],
     "IsDnD": false,
     "layers": [
@@ -411,6 +417,7 @@
 {"name": "inst_1764304C","id": "5f16e9e7-fa58-4c17-89f8-99a53b083287","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_1764304C","objId": "43a41ed5-a2e9-49c1-9c6c-3d5ad1215094","properties": null,"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.0","x": 1440,"y": 720},
 {"name": "inst_622DF20E","id": "fd9d4659-96f8-4dd5-85b2-bf66e85c9409","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_622DF20E","objId": "43a41ed5-a2e9-49c1-9c6c-3d5ad1215094","properties": null,"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.0","x": 1360,"y": 320},
 <<<<<<< HEAD
+<<<<<<< HEAD
 {"name": "inst_410C8644","id": "463c04a6-0c3e-4c98-b6c9-d78fa96d77e4","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_410C8644","objId": "43a41ed5-a2e9-49c1-9c6c-3d5ad1215094","properties": null,"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.0","x": 1440,"y": 320}
 =======
 {"name": "inst_410C8644","id": "463c04a6-0c3e-4c98-b6c9-d78fa96d77e4","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_410C8644","objId": "43a41ed5-a2e9-49c1-9c6c-3d5ad1215094","properties": null,"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.0","x": 1440,"y": 320},
@@ -528,6 +535,9 @@
 {"name": "inst_41C8BB86","id": "c94e0a40-7cf9-46a5-8475-72329cb9c160","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_41C8BB86","objId": "955c74ab-88b4-403d-a10f-98c2389d76f8","properties": null,"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.0","x": 240,"y": 400},
 {"name": "inst_47DB92B2","id": "0cec7d25-6f9a-401c-8cfe-a64eb306c39f","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": true,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_47DB92B2","objId": "955c74ab-88b4-403d-a10f-98c2389d76f8","properties": null,"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.0","x": 320,"y": 240}
 >>>>>>> parent of 0cd0c63... Nyyh
+=======
+{"name": "inst_410C8644","id": "463c04a6-0c3e-4c98-b6c9-d78fa96d77e4","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_410C8644","objId": "43a41ed5-a2e9-49c1-9c6c-3d5ad1215094","properties": null,"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.0","x": 1440,"y": 320}
+>>>>>>> parent of 5bc5a06... merge test, probably fails lmao.
             ],
             "layers": [
 
