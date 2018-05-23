@@ -359,6 +359,14 @@
             }
         },
         {
+            "Key": "5a43b250-419d-4720-b187-abd0945b0fab",
+            "Value": {
+                "id": "3261b713-02fd-444a-bb18-eca5a0c0bcb4",
+                "resourcePath": "objects\\oGameControl\\oGameControl.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "5a46141e-545b-406f-8a45-d938e94336f0",
             "Value": {
                 "id": "91f612c6-b08c-4d10-b9e2-e755f096f328",
@@ -751,6 +759,14 @@
             }
         },
         {
+            "Key": "f9566b6c-83da-4240-a374-3a29d4ced697",
+            "Value": {
+                "id": "a67d9fd9-13ec-4ca0-a655-d6e98862560d",
+                "resourcePath": "scripts\\state_incapacitated\\state_incapacitated.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "fac47ebf-7ffd-414d-bf81-ec39b25fae79",
             "Value": {
                 "id": "e5b0f254-278e-4d12-8cbc-006a43476852",
@@ -785,6 +801,7 @@
     ],
     "script_order": [
         "9e8fc614-161d-4649-a8ef-61309774dce6",
+        "f9566b6c-83da-4240-a374-3a29d4ced697",
         "f2952ba7-b520-43cd-9481-f89f7ded0ef0",
         "1dad3a69-d939-4502-ae8c-7ba2e6541dcb",
         "fef4d252-4272-4437-8965-cbf106d29b0a",

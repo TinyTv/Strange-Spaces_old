@@ -21,24 +21,19 @@ if(instance_exists(oPlayer))
 		}
 
 
-
+		maxDistance = 2;
 		
-		if ((abs(seePosY - y) < 0.2 ) && oPlayer.y = y)
+		if ((abs(seePosY - y) < maxDistance) && oPlayer.y = y)
 		{
 			seePosX = oPlayer.x
 		}
 		
-		//if ((abs(seePosX - x) < 0.2 ) && oPlayer.x = x)
-		//{
-		//seePosY = oPlayer.y
-		//}
-		
-		if (abs(seePosX - x) > 0.2)
+		if (abs(seePosX - x) > maxDistance)
 		{
 				move_towards_point(x, y, seePosX > x ? 4 : -4);
 				waitTime = 0
 		} else 
-		if (abs(seePosY - y) > 0.2)
+		if (abs(seePosY - y) > maxDistance)
 		{
 				move_towards_point(x,0, seePosY < y ? 4 : -4);
 				waitTime = 0

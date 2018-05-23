@@ -1,1 +1,0 @@
-enemyHealth = enemyHealth -1;
