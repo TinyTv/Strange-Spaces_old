@@ -1,3 +1,3 @@
 /// @description 
-instance_destroy(oDmg1);
 instance_destroy();
+global.WormAlert1 = false;

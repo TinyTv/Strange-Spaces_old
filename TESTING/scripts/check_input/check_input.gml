@@ -9,6 +9,7 @@ if (state != states.move and state != states.dash and state != states.attack) //
 		moveDirection = 0;
 		hsp = gridSize;
 		vsp = 0;
+		oPlayer.state = states.move;
 	}
 
 
@@ -18,6 +19,7 @@ if (state != states.move and state != states.dash and state != states.attack) //
 		moveDirection = 2;
 		hsp = -gridSize;
 		vsp = 0;
+		oPlayer.state = states.move;
 	}
 
 
@@ -27,6 +29,7 @@ if (state != states.move and state != states.dash and state != states.attack) //
 		moveDirection = 1;
 		hsp = 0;
 		vsp = -gridSize;
+		oPlayer.state = states.move;
 	}
 
 	//Player movement down
@@ -35,6 +38,7 @@ if (state != states.move and state != states.dash and state != states.attack) //
 		moveDirection = 3;
 		hsp = 0;
 		vsp = gridSize;
+		oPlayer.state = states.move;
 	}
 	
 		
@@ -90,7 +94,7 @@ if (state != states.move and state != states.dash and state != states.attack) //
                 {
                     tempDashDistance = i; // If there's a wall before we can finish dashing, shorten the dash distance (using temporary variable)
 					break;
-			   }   		
+			    } 
 			
 		  }   
 		  
@@ -98,8 +102,17 @@ if (state != states.move and state != states.dash and state != states.attack) //
         //Dash collision check for oDmg1 = can't dash through object oDmg1
         for(var i = 0;i<dashDistance;i++)//If i is smaller than Distance = add 1 to i but keep i the same, until i is = to dashDistance.
         {
-            //Collision:
-            if (place_meeting(oTest.x + sign(hsp) + sign(hsp)*(i*gridSize), oTest.y + sign(vsp) + sign(vsp)*(i*gridSize), oDmg1))
+			
+			//Worm1 dash collision
+			if (place_meeting(oTest.x + sign(hsp) + sign(hsp)*(i*gridSize), oTest.y + sign(vsp) + sign(vsp)*(i*gridSize), oWorm1))
+                {
+                    tempDashDistance = i; // If there's a wall before we can finish dashing, shorten the dash distance (using temporary variable)
+					break;
+			   } 
+			   
+			   
+            //Worm2 dash collision
+            if (place_meeting(oTest.x + sign(hsp) + sign(hsp)*(i*gridSize), oTest.y + sign(vsp) + sign(vsp)*(i*gridSize), oWorm2))
                 {
                     tempDashDistance = i; // If there's a wall before we can finish dashing, shorten the dash distance (using temporary variable)
 					break;
@@ -127,30 +140,34 @@ if (state != states.move and state != states.dash and state != states.attack) //
 				vsp = 0; 
 				
 			}
-		
-	//Collision with oDmg1 does 1 dmg
-	if (place_meeting(oTest.x + sign(hsp), oTest.y + sign(vsp),oDmg1))
-		{
-		playerHealth = playerHealth - 1;
-		}	
-	
-	//Collision with oHazard block kills the player 
-	if (place_meeting(oTest.x + sign(hsp), oTest.y + sign(vsp),oHazard))
-		{
-		state = states.death;
-		state_death()
-	
-		}
-						
-	else state = states.move;
+			
+	if (place_meeting(oTest.x + sign(hsp),oTest.y + sign(vsp),oWorm1))
+			{
+					//if colliding, set state to idle and reset horizontal & vertical speeds
+				state = states.idle;
+				hsp = 0;
+				vsp = 0; 
 				
-		}
-	
-	/*  This code doesn't do ANYTHING?!
-	else 
-	{
-		state = states.idle;	
+			}
+			
+	if (place_meeting(oTest.x + sign(hsp),oTest.y + sign(vsp),oWorm2))
+			{
+					//if colliding, set state to idle and reset horizontal & vertical speeds
+				state = states.idle;
+				hsp = 0;
+				vsp = 0; 
+				
+			}
+			
 	}
-	*/
-		
+			
+	//Collision with oHazard block kills the player 
+	//if (place_meeting(oTest.x + sign(hsp), oTest.y + sign(vsp),oHazard))
+	//	{
+	//	state = states.death;
+	//	state_death()
+	//	}
+				
 }
+
+		

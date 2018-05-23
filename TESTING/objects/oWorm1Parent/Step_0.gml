@@ -1,7 +1,6 @@
 if (Worm1Health > 0)
 {
 	
-	
 ////////////////////////////////////////////////////////////////////////////////////////////////////	
 
 			//Check right tile and Animation for attacking right
@@ -35,8 +34,8 @@ if (Worm1Health > 0)
 	if (WormAttackUp = 1 and global.WormAlert1 = true and Worm1Health > 0)
 		{
 			instance_create_layer(oWorm1.x, oWorm1.y - 80, "Effects", oDmg1);
-			instance_create_layer(oWorm1.x + 80, oWorm1.y - 80, "Effects", oDmg1);
 			instance_create_layer(oWorm1.x - 80, oWorm1.y - 80, "Effects", oDmg1);
+			instance_create_layer(oWorm1.x + 80, oWorm1.y - 80, "Effects", oDmg1);
 			WormAttackUp = 0;
 		}		
 		
