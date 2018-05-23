@@ -157,6 +157,7 @@
         "0cec7d25-6f9a-401c-8cfe-a64eb306c39f",
         "f78f2ef3-ac51-426d-ae6f-e5a67c3bb893"
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> parent of 0cd0c63... Nyyh
 =======
 >>>>>>> parent of 0cd0c63... Nyyh
@@ -165,6 +166,8 @@
 =======
         "c94e0a40-7cf9-46a5-8475-72329cb9c160"
 >>>>>>> parent of 48ff421... Merge pull request #15 from TinyTv/devEsa
+=======
+>>>>>>> parent of 0cd0c63... Nyyh
     ],
     "IsDnD": false,
     "layers": [
@@ -427,9 +430,12 @@
 =======
 {"name": "inst_410C8644","id": "463c04a6-0c3e-4c98-b6c9-d78fa96d77e4","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_410C8644","objId": "43a41ed5-a2e9-49c1-9c6c-3d5ad1215094","properties": null,"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.0","x": 1440,"y": 320},
 {"name": "inst_4071B2CD","id": "f78f2ef3-ac51-426d-ae6f-e5a67c3bb893","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_4071B2CD","objId": "5a43b250-419d-4720-b187-abd0945b0fab","properties": null,"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.0","x": 0,"y": 400}
+<<<<<<< HEAD
 =======
 {"name": "inst_410C8644","id": "463c04a6-0c3e-4c98-b6c9-d78fa96d77e4","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_410C8644","objId": "43a41ed5-a2e9-49c1-9c6c-3d5ad1215094","properties": null,"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.0","x": 1440,"y": 320}
 >>>>>>> parent of 48ff421... Merge pull request #15 from TinyTv/devEsa
+=======
+>>>>>>> parent of 0cd0c63... Nyyh
             ],
             "layers": [
 
