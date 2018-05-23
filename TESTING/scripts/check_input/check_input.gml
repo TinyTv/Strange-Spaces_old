@@ -162,11 +162,22 @@ if (state != states.move and state != states.dash and state != states.attack) //
 	}
 			
 	//Collision with oHazard block kills the player 
+<<<<<<< HEAD
 	//if (place_meeting(oTest.x + sign(hsp), oTest.y + sign(vsp),oHazard))
 	//	{
 	//	state = states.death;
 	//	state_death()
 	//	}
+=======
+	if (place_meeting(oTest.x + sign(hsp), oTest.y + sign(vsp),oHazard))
+		{
+		state = states.death;
+		state_death()
+	
+		}
+						
+	else state = states.move;
+>>>>>>> parent of 0cd0c63... Nyyh
 				
 }
 
