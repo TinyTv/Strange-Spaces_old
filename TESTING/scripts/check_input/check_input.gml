@@ -1,4 +1,5 @@
-if (state != states.move and state != states.dash and state != states.attack and state != states.incapacitated) //if state is not move or dash, check if a key is pressed:
+
+if (state != states.move and state != states.dash and state != states.attack) //if state is not move or dash, check if a key is pressed:
 	{
 	
 		
@@ -8,6 +9,7 @@ if (state != states.move and state != states.dash and state != states.attack and
 		moveDirection = 0;
 		hsp = gridSize;
 		vsp = 0;
+		oPlayer.state = states.move;
 	}
 
 
@@ -17,7 +19,9 @@ if (state != states.move and state != states.dash and state != states.attack and
 		moveDirection = 2;
 		hsp = -gridSize;
 		vsp = 0;
+		oPlayer.state = states.move;
 	}
+
 
 	//Player movement up
 	if (keyboard_check_pressed(ord("W")))
@@ -25,6 +29,7 @@ if (state != states.move and state != states.dash and state != states.attack and
 		moveDirection = 1;
 		hsp = 0;
 		vsp = -gridSize;
+		oPlayer.state = states.move;
 	}
 
 	//Player movement down
@@ -33,12 +38,13 @@ if (state != states.move and state != states.dash and state != states.attack and
 		moveDirection = 3;
 		hsp = 0;
 		vsp = gridSize;
+		oPlayer.state = states.move;
 	}
 	
 		
 	
 	//Turning faceDirection left 90 degrees
-	if (keyboard_check_pressed(vk_left))
+	if (keyboard_check_pressed(ord("Q")))
 	{ 
 		faceDirection = faceDirection+1
 		if (faceDirection>3)
@@ -49,7 +55,7 @@ if (state != states.move and state != states.dash and state != states.attack and
 	}
 	
 	//Turning faceDirection right 90 degrees
-	if (keyboard_check_pressed(vk_right))
+	if (keyboard_check_pressed(ord("E")))
 	{ 
 		faceDirection = faceDirection-1
 		if (faceDirection<0)
@@ -61,7 +67,7 @@ if (state != states.move and state != states.dash and state != states.attack and
 	
 	//Attacking	- if key is pressed execute attack script
 		
-		if (keyboard_check_pressed(vk_space) and state = states.idle) 
+		if (keyboard_check_pressed(vk_left) and state = states.idle) 
 		{
 			state = states.attack;
 		}
@@ -69,44 +75,57 @@ if (state != states.move and state != states.dash and state != states.attack and
 		
 		
 	//Player ability Dash 
-    if (keyboard_check_pressed(vk_shift))
-    {
-
+    if (keyboard_check_pressed(vk_down))
+    { 
         var tempDashDistance = dashDistance;
-
+        
         //Takes faceDirection and sets the direction of our dash for checking collisions
-		hsp = lengthdir_x(dashDistance * gridSize, faceDirection * 90);
-		vsp = lengthdir_y(dashDistance * gridSize, faceDirection * 90);	
+        hsp = lengthdir_x(dashDistance * gridSize, faceDirection * 90);
+        vsp = lengthdir_y(dashDistance * gridSize, faceDirection * 90);
         state = states.dash; //sets the state to dash
-		
-		
+                           
+			   
+				   
         //Dash collision check for walls/blocks (oWall)
         for(var i = 0;i<dashDistance;i++)//If i is smaller than Distance = add 1 to i but keep i the same, until i is = to dashDistance.
         {
             //Collision:
             if (place_meeting(oTest.x + sign(hsp) + sign(hsp)*(i*gridSize), oTest.y + sign(vsp) + sign(vsp)*(i*gridSize), oWall))
                 {
-                    tempDashDistance = i; // If there's a wall before we can finnish dashing, shorten the dash distance (using temporary variable)
-					
+                    tempDashDistance = i; // If there's a wall before we can finish dashing, shorten the dash distance (using temporary variable)
 					break;
-			   }
-		}   
+			    } 
+			
+		  }   
 		  
-		//USE THIS CODE FOR DISABLING DASHING THROUGH ENEMIES OR OTHER SOLID OBJECTS
+		 //     USE THIS CODE FOR DISABLING DASHING THROUGH ENEMIES OR OTHER SOLID OBJECTS
         //Dash collision check for oDmg1 = can't dash through object oDmg1
         for(var i = 0;i<dashDistance;i++)//If i is smaller than Distance = add 1 to i but keep i the same, until i is = to dashDistance.
         {
-            //Collision:
-            if (place_meeting(oTest.x + sign(hsp) + sign(hsp)*(i*gridSize), oTest.y + sign(vsp) + sign(vsp)*(i*gridSize), oDmg1))
+			
+			//Worm1 dash collision
+			if (place_meeting(oTest.x + sign(hsp) + sign(hsp)*(i*gridSize), oTest.y + sign(vsp) + sign(vsp)*(i*gridSize), oWorm1))
+                {
+                    tempDashDistance = i; // If there's a wall before we can finish dashing, shorten the dash distance (using temporary variable)
+					break;
+			   } 
+			   
+			   
+            //Worm2 dash collision
+            if (place_meeting(oTest.x + sign(hsp) + sign(hsp)*(i*gridSize), oTest.y + sign(vsp) + sign(vsp)*(i*gridSize), oWorm2))
                 {
                     tempDashDistance = i; // If there's a wall before we can finish dashing, shorten the dash distance (using temporary variable)
 					break;
 			   }   		
-		  }
+			
+		  }  
+		  	    
                 
 		//Set hsp and vsp again and dash
         hsp = lengthdir_x(tempDashDistance * gridSize, faceDirection * 90);
-        vsp = lengthdir_y(tempDashDistance * gridSize, faceDirection * 90);        
+        vsp = lengthdir_y(tempDashDistance * gridSize, faceDirection * 90);
+        return;
+		        
     }
 		
 	//Collisions for normal movement		
@@ -115,36 +134,40 @@ if (state != states.move and state != states.dash and state != states.attack and
 			//Collision check
 	if (place_meeting(oTest.x + sign(hsp),oTest.y + sign(vsp),oWall))
 			{
-				//if colliding, set state to idle and reset horizontal & vertical speeds
+					//if colliding, set state to idle and reset horizontal & vertical speeds
 				state = states.idle;
 				hsp = 0;
 				vsp = 0; 
 				
 			}
-		
-	//Collision with oDmg1 does 1 dmg
-	if (place_meeting(oTest.x + sign(hsp), oTest.y + sign(vsp),oDmg1))
-		{
-		playerHealth = playerHealth - 1;
-		}	
-	
+			
+	if (place_meeting(oTest.x + sign(hsp),oTest.y + sign(vsp),oWorm1))
+			{
+					//if colliding, set state to idle and reset horizontal & vertical speeds
+				state = states.idle;
+				hsp = 0;
+				vsp = 0; 
+				
+			}
+			
+	if (place_meeting(oTest.x + sign(hsp),oTest.y + sign(vsp),oWorm2))
+			{
+					//if colliding, set state to idle and reset horizontal & vertical speeds
+				state = states.idle;
+				hsp = 0;
+				vsp = 0; 
+				
+			}
+			
+	}
+			
 	//Collision with oHazard block kills the player 
 	//if (place_meeting(oTest.x + sign(hsp), oTest.y + sign(vsp),oHazard))
 	//	{
 	//	state = states.death;
 	//	state_death()
-	
 	//	}
-						
-	else state = states.move;
 				
-		}
-	
-	/*  This code doesn't do ANYTHING?!
-	else 
-	{
-		state = states.idle;	
-	}
-	*/
-		
 }
+
+		
