@@ -152,6 +152,7 @@
 =======
         "0370ef53-8f43-4532-8123-ac7d606c7084",
         "0cd07456-57a5-4d49-9b39-efe171a03e48",
+<<<<<<< HEAD
         "c94e0a40-7cf9-46a5-8475-72329cb9c160",
         "0cec7d25-6f9a-401c-8cfe-a64eb306c39f",
         "f78f2ef3-ac51-426d-ae6f-e5a67c3bb893"
@@ -161,6 +162,9 @@
 >>>>>>> parent of 0cd0c63... Nyyh
 =======
 >>>>>>> parent of 5bc5a06... merge test, probably fails lmao.
+=======
+        "c94e0a40-7cf9-46a5-8475-72329cb9c160"
+>>>>>>> parent of 48ff421... Merge pull request #15 from TinyTv/devEsa
     ],
     "IsDnD": false,
     "layers": [
@@ -418,10 +422,14 @@
 {"name": "inst_622DF20E","id": "fd9d4659-96f8-4dd5-85b2-bf66e85c9409","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_622DF20E","objId": "43a41ed5-a2e9-49c1-9c6c-3d5ad1215094","properties": null,"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.0","x": 1360,"y": 320},
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 {"name": "inst_410C8644","id": "463c04a6-0c3e-4c98-b6c9-d78fa96d77e4","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_410C8644","objId": "43a41ed5-a2e9-49c1-9c6c-3d5ad1215094","properties": null,"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.0","x": 1440,"y": 320}
 =======
 {"name": "inst_410C8644","id": "463c04a6-0c3e-4c98-b6c9-d78fa96d77e4","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_410C8644","objId": "43a41ed5-a2e9-49c1-9c6c-3d5ad1215094","properties": null,"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.0","x": 1440,"y": 320},
 {"name": "inst_4071B2CD","id": "f78f2ef3-ac51-426d-ae6f-e5a67c3bb893","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_4071B2CD","objId": "5a43b250-419d-4720-b187-abd0945b0fab","properties": null,"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.0","x": 0,"y": 400}
+=======
+{"name": "inst_410C8644","id": "463c04a6-0c3e-4c98-b6c9-d78fa96d77e4","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_410C8644","objId": "43a41ed5-a2e9-49c1-9c6c-3d5ad1215094","properties": null,"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.0","x": 1440,"y": 320}
+>>>>>>> parent of 48ff421... Merge pull request #15 from TinyTv/devEsa
             ],
             "layers": [
 
@@ -532,12 +540,16 @@
 {"name": "inst_62CE69A1","id": "e3832594-4b05-4c2e-b92d-efaafc49671a","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_62CE69A1","objId": "1315fd4e-a901-4da3-a0eb-0bfa9b5fbdd6","properties": null,"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.0","x": 1040,"y": 560},
 {"name": "inst_71070863","id": "0370ef53-8f43-4532-8123-ac7d606c7084","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": true,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_71070863","objId": "df18f1f0-bd22-4534-8c49-eaf1cc61d124","properties": null,"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.0","x": 320,"y": 240},
 {"name": "inst_30B9B723","id": "0cd07456-57a5-4d49-9b39-efe171a03e48","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_30B9B723","objId": "5cfa24dd-dfa1-4e5a-aed3-4636c47a9b31","properties": null,"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.0","x": 320,"y": 240},
+<<<<<<< HEAD
 {"name": "inst_41C8BB86","id": "c94e0a40-7cf9-46a5-8475-72329cb9c160","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_41C8BB86","objId": "955c74ab-88b4-403d-a10f-98c2389d76f8","properties": null,"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.0","x": 240,"y": 400},
 {"name": "inst_47DB92B2","id": "0cec7d25-6f9a-401c-8cfe-a64eb306c39f","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": true,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_47DB92B2","objId": "955c74ab-88b4-403d-a10f-98c2389d76f8","properties": null,"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.0","x": 320,"y": 240}
 >>>>>>> parent of 0cd0c63... Nyyh
 =======
 {"name": "inst_410C8644","id": "463c04a6-0c3e-4c98-b6c9-d78fa96d77e4","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_410C8644","objId": "43a41ed5-a2e9-49c1-9c6c-3d5ad1215094","properties": null,"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.0","x": 1440,"y": 320}
 >>>>>>> parent of 5bc5a06... merge test, probably fails lmao.
+=======
+{"name": "inst_41C8BB86","id": "c94e0a40-7cf9-46a5-8475-72329cb9c160","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": true,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_41C8BB86","objId": "955c74ab-88b4-403d-a10f-98c2389d76f8","properties": null,"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.0","x": 240,"y": 400}
+>>>>>>> parent of 48ff421... Merge pull request #15 from TinyTv/devEsa
             ],
             "layers": [
 

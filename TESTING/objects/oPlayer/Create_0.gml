@@ -12,8 +12,13 @@ y = round(y / gridSize) * gridSize;
 
 depth = -2
 
+<<<<<<< HEAD
 playerHealth = 1;
 
+=======
+
+playerHealth = 1
+>>>>>>> parent of 48ff421... Merge pull request #15 from TinyTv/devEsa
 
 hsp = 0;
 vsp = 0;

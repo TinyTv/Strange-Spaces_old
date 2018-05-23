@@ -14,6 +14,7 @@
         "38ada92c-afb5-48c7-8ea3-f5c16557f942",
         "107bf63e-6309-4f75-9846-4672feef22ff",
         "a53cdb56-64e9-4012-a1fa-6410b176005d",
+<<<<<<< HEAD
         "9ef0be96-a67f-4f2b-afca-57216e884f52",
 <<<<<<< HEAD
         "5a43b250-419d-4720-b187-abd0945b0fab"
@@ -23,6 +24,9 @@
         "8b2a82b7-32bc-47ac-8591-48455615e979",
         "252dc0e0-ccff-457f-b176-7085078f692d"
 >>>>>>> parent of 5bc5a06... merge test, probably fails lmao.
+=======
+        "9ef0be96-a67f-4f2b-afca-57216e884f52"
+>>>>>>> parent of 48ff421... Merge pull request #15 from TinyTv/devEsa
     ],
     "filterType": "GMObject",
     "folderName": "objects",

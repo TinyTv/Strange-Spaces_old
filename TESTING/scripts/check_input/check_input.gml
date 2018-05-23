@@ -94,7 +94,11 @@ if (state != states.move and state != states.dash and state != states.attack) //
                 {
                     tempDashDistance = i; // If there's a wall before we can finish dashing, shorten the dash distance (using temporary variable)
 					break;
+<<<<<<< HEAD
 			    } 
+=======
+			   }   		
+>>>>>>> parent of 48ff421... Merge pull request #15 from TinyTv/devEsa
 			
 		  }   
 		  

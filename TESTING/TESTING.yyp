@@ -800,6 +800,7 @@
             }
         },
         {
+<<<<<<< HEAD
             "Key": "f8752ff4-46c3-46fc-93d0-b0b13d470290",
             "Value": {
                 "id": "099bf811-3203-4d39-9a84-0198aca9703d",
@@ -808,6 +809,8 @@
             }
         },
         {
+=======
+>>>>>>> parent of 48ff421... Merge pull request #15 from TinyTv/devEsa
             "Key": "fac47ebf-7ffd-414d-bf81-ec39b25fae79",
             "Value": {
                 "id": "e5b0f254-278e-4d12-8cbc-006a43476852",
