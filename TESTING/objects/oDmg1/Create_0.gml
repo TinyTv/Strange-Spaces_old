@@ -1,1 +1,1 @@
-alarm[0] = 3;
+enemyHealth = 2;
